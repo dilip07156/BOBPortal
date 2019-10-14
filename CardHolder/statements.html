@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>layout</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- project style -->
+    <!--<link href="assets/scss/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="assets/scss/bob.css" rel="stylesheet" />
+    <link href="assets/scss/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="assets/scss/slick.css" rel="stylesheet" />
+    <link href="assets/scss/slick-theme.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <div class="container-fluid">
+        <!--STATEMENTS-->
+        <h2 class="sub-title mb-2">Statements</h2>
+        <div class="row">
+            <!--LEFT SECTION-->
+            <div class="col-lg-4">
+                <div class="list-group  request-list mb-4">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        Card statements
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Payment / Credit Details</a>
+                    <a href="#" class="list-group-item list-group-item-action">Statement Delivery Mode</a>
+                    <a href="#" class="list-group-item list-group-item-action">Transactions</a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <!--CARD STATMENTS-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Card Statement</h6>
+                        <small>Below is the Card Statement for last 6 months</small>
+                    </div>
+                </div>
+
+                <!--header-->
+                <div class="card mb-4 d-none d-lg-block">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-lg">Statement Month</div>
+                            <div class="col-lg">Statement Date</div>
+                            <div class="col-lg">Minimum Payment Due</div>
+                            <div class="col-lg-4">Actions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statement-accordian">
+
+                    <div class="card mb-4">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="row">
+                                    <div class="col-lg mb-lg-0 mb-2"><span class="statement-month">February 2019</span></div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7 d-block d-lg-none"><span>Statement Date</span></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">01 Feb 19</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7 d-block d-lg-none"><span>Minimum payment Due</span></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 15,180</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="" class="btn-link link mr-4">Print</a>
+                                        <a href="" class="btn-link link">Download</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7"><small class="font-weight-semi-bold">Opening Balance</small></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 49,200</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7"><small class="font-weight-semi-bold">Payment/ Credit/ Reversals</small></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 49,111.45</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7"><small class="font-weight-semi-bold">New Payments/ Debit/ Charges</small></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 1,81,451.78</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7"><small class="font-weight-semi-bold">Closing Balance</small></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 68,375.90</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <div class="row">
+                                    <div class="col-lg mb-lg-0 mb-2"><span class="statement-month">February 2019</span></div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7 d-block d-lg-none"><span>Statement Date</span></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">01 Feb 19</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7 d-block d-lg-none"><span>Minimum payment Due</span></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 15,180</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="" class="btn-link link mr-4">Print</a>
+                                        <a href="" class="btn-link link">Download</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <div class="row">
+                                    <div class="col-lg mb-lg-0 mb-2"><span class="statement-month">February 2019</span></div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7 d-block d-lg-none"><span>Statement Date</span></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">01 Feb 19</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="row mb-lg-0 mb-2">
+                                            <div class="col-lg-12 col-7 d-block d-lg-none"><span>Minimum payment Due</span></div>
+                                            <div class="col-lg-12 col-5 text-lg-left text-right">₹ 15,180</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="" class="btn-link link mr-4">Print</a>
+                                        <a href="" class="btn-link link">Download</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--PAYMENT CREDIT DETAIL-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Payment / Credit Detail</h6>
+                        <small>You can view Payment History upto last 24 months</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="row align-items-end">
+                            <div class="col-md-5 mb-3">
+                                <label for="">From<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <label for="">To<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="accordian-payment" class="statement-accordian accordian">
+
+                    <div class="card mb-4">
+                        <div class="card-header" id="heading1">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <span class="statement-month text-uppercase">March 2019</span>
+                            </button>
+                        </div>
+
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordian-payment">
+                            <div class="card-body mobile-table">
+                                <table role="table">
+                                    <thead role="rowgroup">
+                                        <tr role="row">
+                                            <th role="columnheader">Transaction Date</th>
+                                            <th role="columnheader">Amount in (INR)</th>
+                                            <th role="columnheader">Description</th>
+                                            <th role="columnheader">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody role="rowgroup">
+                                        <tr role="row">
+                                            <td role="cell">23 Mar 19</td>
+                                            <td role="cell">₹ 49,658</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header" id="">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                <span class="statement-month text-uppercase">February 2019</span>
+                            </button>
+                        </div>
+
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordian-payment">
+                            <div class="card-body mobile-table">
+                                <table role="table">
+                                    <thead role="rowgroup">
+                                        <tr role="row">
+                                            <th role="columnheader">Transaction Date</th>
+                                            <th role="columnheader">Amount in (INR)</th>
+                                            <th role="columnheader">Description</th>
+                                            <th role="columnheader">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody role="rowgroup">
+                                        <tr role="row">
+                                            <td role="cell">23 Mar 19</td>
+                                            <td role="cell">₹ 49,658</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">24 Mar 19</td>
+                                            <td role="cell">₹ 29,111.45</td>
+                                            <td role="cell">E-Banking-CA-Payment Recd</td>
+                                            <td role="cell">Misc. Credit</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--STATEMENT DELIVERY MODE-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Statement Delivery Mode</h6>
+                        <small>Please select the mode by which you want to reeceive the Statment</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="row align-items-end">
+                            <div class="col-12 mb-3">
+                                <div><small>Account Number</small></div>
+                                <div>534444000077756</div>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <div><small>Name of Card Holder</small></div>
+                                <div>Rajvardhan Kapoor</div>
+                            </div>
+
+                            <div class="col-md-5 mb-3">
+                                <label for="">From<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <label for="">To<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="custom-control custom-checkbox inline-control">
+                                    <input type="checkbox" class="custom-control-input" id="Email" name="">
+                                    <label class="custom-control-label" for="Email">E-mail</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox inline-control">
+                                    <input type="checkbox" class="custom-control-input" id="HardCopy" name="">
+                                    <label class="custom-control-label" for="HardCopy">Hard Copy</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox inline-control">
+                                    <input type="checkbox" class="custom-control-input" id="EStatement" name="">
+                                    <label class="custom-control-label" for="EStatement">E-Statement</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <button type="button" class="btn btn-primary btn-lg text-uppercase">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--TRANSACTIONS-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="mb-0">Transactions</h6>
+                    </div>
+                </div>
+
+                <div class="custom-tab">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">                        
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-billed-tab" data-toggle="pill" href="#pills-billed" role="tab" aria-controls="pills-billed" aria-selected="false">Billed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-unbilled-tab" data-toggle="pill" href="#pills-unbilled" role="tab" aria-controls="pills-unbilled" aria-selected="false">Unbilled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-unsettled-tab" data-toggle="pill" href="#pills-unsettled" role="tab" aria-controls="pills-unsettled" aria-selected="false">Unsettled</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                            <!--All TRANSACTIONS-->
+                            <ul class="list-group transaction-list-two">
+                                <div class="card-header custom-header p-3">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <strong>Details</strong>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <strong>Amount</strong>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Starbucks Juhu
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <span class="location-name">Nature's Basket online Services</span>
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,113 </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Starbucks Juhu
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Starbucks Juhu
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Starbucks Juhu
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Starbucks Juhu
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Starbucks Juhu
+                                            <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                        </div>
+                                        <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="pills-billed" role="tabpanel" aria-labelledby="pills-billed-tab">BIlled</div>
+                        <div class="tab-pane fade" id="pills-unbilled" role="tabpanel" aria-labelledby="pills-unbilled-tab">Unbilled</div>
+                        <div class="tab-pane fade" id="pills-unsettled" role="tabpanel" aria-labelledby="pills-unsettled-tab">Unsettled</div>
+                    </div>
+                </div>              
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/popper.min.js"></script>
+    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/slick.min.js"></script>
+    <!-- jQuery Custom Scroller -->
+    <script src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+
+            $('#dismiss, .overlay').on('click', function () {
+                // hide sidebar
+                $('#sidebar').removeClass('active');
+                // hide overlay
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                // open sidebar
+                $('#sidebar').toggleClass('active');
+                // fade in the overlay
+                $('.overlay').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+            // add mCustomScrollbar on mobile device
+            if ($(window).width() >= 992) {
+                $(".mobile-table, .transaction-list-two").mCustomScrollbar({
+                    theme: "minimal-dark"
+                });
+            }
+
+            // hamburger menu
+            var forEach = function (t, o, r) { if ("[object Object]" === Object.prototype.toString.call(t)) for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t) };
+
+            var hamburgers = document.querySelectorAll(".hamburger");
+            if (hamburgers.length > 0) {
+                forEach(hamburgers, function (hamburger) {
+                    hamburger.addEventListener("click", function () {
+                        this.classList.toggle("is-active");
+                    }, false);
+                });
+            }
+
+
+            //statements
+            $('.collapse').on('show.bs.collapse', function () {
+                $('.collapse.in').collapse('hide');
+            });
+
+            //datepicker
+            $('.datepicker').datepicker({
+                autoclose: true,
+                todayHighlight: true,
+            });
+            //$('.datepicker').datepicker("setDate", new Date());
+
+
+        });
+
+        // ===== Scroll to Top ====
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+
+
+
+
+
+    </script>
+
+</body>
+</html>

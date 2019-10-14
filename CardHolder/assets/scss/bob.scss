@@ -1,0 +1,36 @@
+﻿//bootstrap styles
+@import "../bootstrap/scss/bootstrap";
+
+/*custom styles */
+// variables, mixins, functions
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+
+// common 
+@import "components/common";
+@import "components/buttons";
+
+// header, footer, navigation
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+// specific pages
+@import "pages/dashboard";
+@import "pages/request";
+@import "pages/statements";
+@import "pages/request-status";
+@import "pages/payments";
+@import "pages/login";
+
+//vendor styles
+@import "vendor/nice-select";
+
+
+
+//hambuger
+//@import "hamburger/hamburgers";
+
+
+

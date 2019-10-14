@@ -1,0 +1,92 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.request-list {
+    @include card-shadow;
+
+    @media screen and (max-width: $break-large) {
+        //max-height:200px;
+    }
+
+    .list-group-item {
+        border: 0;
+
+        @media screen and (max-width: $break-medium) {
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-color: rgba(0,0,0,.125);
+            margin: 0 1rem;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:last-child {
+                border-radius: 0;
+                border-bottom: 0;
+            }
+        }
+
+        &.active {
+            background-color: #f5f8fb;
+            border-left: 4px solid $brand-color;
+            color: $primary-color;
+            font-weight: 500;
+
+            @media screen and (max-width: $break-medium) {
+                background-color: $white;
+                border-left: 0;
+                font-weight: 400;
+            }
+        }
+
+        &::after {
+            @media screen and (max-width: $break-medium) {
+                position: absolute;
+                right: 0;
+                top: 15px;
+                content: " ";
+                background: url("../images/chevron.svg") no-repeat right center/14px 8px;
+                width: 15px;
+                height: 15px;
+                -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .list-group-item-action {
+        @media screen and (max-width: $break-medium) {
+            width: auto;
+        }
+
+        &:active, &:hover {
+            @media screen and (max-width: $break-medium) {
+                background-color: $white-color;
+                color: $brand-color;
+            }
+        }
+    }
+}
+
+.radio-contorl-table {
+    margin-left: 12px;
+
+    tr td {
+        width: 100px;
+    }
+}
+
+.checkbox-control-table {
+    margin-left: 30px;
+
+    tr td {
+        width: 140px;
+    }
+}
+
+.radio-contorl-paymentprocess-table {
+    margin-left: 17px;
+
+    tr td {
+        width: 240px;
+    }
+}

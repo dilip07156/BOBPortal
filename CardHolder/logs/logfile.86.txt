@@ -1,0 +1,62 @@
+2019-08-23 15:02:30.8501 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:02:30.9691 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:04:31.1575 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-08-23 15:04:31.1914 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-08-23 15:04:31.1914 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-08-23 15:04:38.9535 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:04:52.5372 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-08-23 15:04:52.5372 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-08-23 15:04:52.5372 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-08-23 15:04:58.3026 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:05:37.0651 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:05:37.1449 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:05:45.6107 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-08-23 15:05:45.6146 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-08-23 15:05:45.6146 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-08-23 15:05:49.1684 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:05:58.6724 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-08-23 15:05:58.6764 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-08-23 15:05:58.6764 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-08-23 15:06:02.9776 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:10:35.0182 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:13:58.1893 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:15:42.3659 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:21:06.5148 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 15:30:28.8139 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 15:34:19.6753 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 16:06:16.5238 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 16:08:50.5534 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 16:10:11.4890 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 16:14:13.8754 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 16:16:01.3082 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-08-23 16:16:01.3082 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-08-23 16:16:01.3082 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-08-23 16:23:36.2271 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 16:23:36.3127 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 16:23:52.8752 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-08-23 16:23:52.8752 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-08-23 16:23:52.8752 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-08-23 16:24:00.3937 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-23 16:25:12.8328 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 16:52:45.7243 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 17:42:50.3228 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 18:19:14.3769 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-23 18:30:12.8235 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:

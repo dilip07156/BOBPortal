@@ -1,0 +1,16 @@
+﻿@mixin card-shadow {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+}
+@mixin brand-gradient {
+    background: linear-gradient(48.38deg, #3CBFE9 0%, #3E5996 100%);
+}
+@mixin brand-gradient-reverse {
+    background: linear-gradient(48.38deg, #3E5996 0%, #3CBFE9 100%);
+}
+
+@mixin card-hover-shadow {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+}

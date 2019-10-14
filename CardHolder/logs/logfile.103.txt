@@ -1,0 +1,20 @@
+2019-10-01 14:51:19.6233 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 14:53:04.8028 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 14:56:41.3368 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 14:59:49.9087 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:00:26.0802 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:02:19.0063 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:03:59.8512 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:04:17.6062 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:04:47.1572 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:05:32.5919 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:06:28.8280 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:07:10.2016 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:09:39.7954 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:29:08.1521 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 15:30:26.2132 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:{"RespCode":"205","CardNumber":"4624900000073121","TxnType":"CB","RespDesc":"Database failure"}
+2019-10-01 16:59:29.1084 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-10-01 16:59:29.2227 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-10-01 17:09:55.7204 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-01 17:10:19.4558 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-01 17:11:58.2421 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}

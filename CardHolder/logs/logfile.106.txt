@@ -1,0 +1,55 @@
+2019-10-05 11:43:50.5642 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:
+2019-10-05 11:45:55.4577 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:
+2019-10-05 11:48:18.0552 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 11:58:05.7688 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:00:48.6496 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:03:46.4144 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:21:03.9863 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:22:46.2522 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:25:47.3602 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:27:32.9901 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:28:55.5323 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:33:26.1410 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:37:57.8123 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:41:59.1416 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 12:43:44.9769 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 13:01:14.0543 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 85463
+Session ID: 577 Serial number: 58324
+2019-10-05 13:01:23.3119 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 85463
+Session ID: 577 Serial number: 58324
+2019-10-05 13:06:01.9577 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 13:09:42.2551 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 13:22:23.9160 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-10-05 13:22:24.0010 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-10-05 13:24:12.5524 CardHolderOracle.DAL.common ORA-02396: exceeded maximum idle time, please connect again
+2019-10-05 13:24:12.7790 CardHolderOracle.DAL.common Error generated :  CardList ORA-01012: not logged on
+Process ID: 92304
+Session ID: 199 Serial number: 62341
+2019-10-05 13:24:12.8870 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 92304
+Session ID: 199 Serial number: 62341
+2019-10-05 13:25:37.4436 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 92304
+Session ID: 199 Serial number: 62341
+2019-10-05 13:25:37.6916 CardHolderOracle.DAL.common Error generated :  CardList ORA-01012: not logged on
+Process ID: 92304
+Session ID: 199 Serial number: 62341
+2019-10-05 13:25:37.8008 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 92304
+Session ID: 199 Serial number: 62341
+2019-10-05 13:25:57.8681 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 92304
+Session ID: 199 Serial number: 62341
+2019-10-05 13:32:10.8133 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 13:33:34.4282 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 13:39:28.9659 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:
+2019-10-05 13:45:21.9886 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:
+2019-10-05 13:58:41.7516 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:
+2019-10-05 14:24:39.7938 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 14:25:37.6780 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 14:26:41.8669 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-05 14:26:53.1283 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:
+2019-10-05 14:27:51.1819 CardHolder.ServiceRequest.BlockingCard Jetty Server Response String:
+2019-10-05 14:34:18.4837 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:

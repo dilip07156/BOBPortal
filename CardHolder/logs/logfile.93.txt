@@ -1,0 +1,4 @@
+2019-09-11 15:07:12.1329 CardHolderOracle.DAL.common ORA-03135: connection lost contact
+Process ID: 100170
+Session ID: 577 Serial number: 50612
+2019-09-11 16:01:30.7308 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}

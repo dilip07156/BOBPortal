@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <OWNED_VEHICLE_TYPE>    
+    <Detail value="1" text="2 Wheeler" lang="en"></Detail>
+    <Detail value="2" text="3 Wheeler" lang="en"></Detail>
+    <Detail value="3" text="4 Wheeler" lang="en"></Detail>
+  </OWNED_VEHICLE_TYPE>
+  <EDUCATION>
+    <Detail value="1" text="Professional" lang="en"></Detail>
+    <Detail value="2" text="Self Employed" lang="en"></Detail>
+    <Detail value="3" text="Service" lang="en"></Detail>
+    <Detail value="4" text="House Wife" lang="en"></Detail>
+    <Detail value="5" text="Other" lang="en"></Detail>
+  </EDUCATION>
+  <NAME>
+    <Detail text="this is text thing" lang="en"></Detail>
+  </NAME>
+</data>
+

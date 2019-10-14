@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="RefreshUserControlSite.ascx.cs" Inherits="CardHolder.RefreshUserControlSite" %>
+<asp:Button ID="tesite" runat="server" Text="submit" onclick="tesite_Click"  Visible="false"/>

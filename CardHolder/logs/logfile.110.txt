@@ -1,0 +1,48 @@
+2019-10-11 10:24:37.5731 CardHolderOracle.DAL.common Error generated :  CardStatementCount :ORA-03113: end-of-file on communication channel
+Process ID: 97597
+Session ID: 389 Serial number: 63760
+2019-10-11 10:24:37.6244 CardHolderOracle.DAL.common Error generated :  CardStatement :ORA-03113: end-of-file on communication channel
+Process ID: 107176
+Session ID: 582 Serial number: 15862
+2019-10-11 10:24:37.7855 CardHolderOracle.DAL.common Error generated :  CardList ORA-03113: end-of-file on communication channel
+Process ID: 107172
+Session ID: 9 Serial number: 11942
+2019-10-11 12:44:54.9923 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-10-11 12:44:55.0419 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-10-11 12:44:55.0419 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-10-11 12:57:49.4582 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-10-11 12:57:49.4582 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-10-11 12:57:49.4671 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-10-11 12:58:20.6734 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-10-11 12:58:20.6734 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-10-11 12:58:20.6843 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-10-11 16:28:00.4753 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"5344440000141574","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-11 16:28:08.2297 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"5344440000141574","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-11 16:28:41.9669 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-10-11 16:28:42.0487 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-10-11 17:05:46.7536 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-10-11 17:05:46.7696 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-10-11 17:05:46.7696 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-10-11 17:05:50.8107 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-10-11 17:05:50.8177 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-10-11 17:05:50.8177 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-10-11 18:09:40.5061 CardHolderOracle.DAL.common SMS Fail ERROR:The underlying connection was closed: The connection was closed unexpectedly.
+2019-10-11 18:10:02.5099 CardHolderOracle.DAL.common SMS Fail ERROR:The underlying connection was closed: The connection was closed unexpectedly.
+2019-10-11 18:12:35.8960 CardHolderOracle.DAL.common SMS Fail ERROR:The underlying connection was closed: The connection was closed unexpectedly.
+2019-10-11 18:13:10.7002 CardHolderOracle.DAL.common SMS Fail ERROR:The operation has timed out
+2019-10-11 18:25:07.4004 CardHolderOracle.DAL.common SMS Fail ERROR:The operation has timed out

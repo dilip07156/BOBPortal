@@ -1,0 +1,8 @@
+﻿/// <summary>
+        /// Initializes a new BOBCardEntities object using the connection string found in the 'BOBCardEntities' section of the application configuration file.
+        /// </summary>
+        public BOBCardEntities() : base(DbConnectionHelper.GetConnectionString(), "BOBCardEntities")
+        {
+            this.ContextOptions.LazyLoadingEnabled = true;
+            OnContextCreated();
+        }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Reject</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-521.000000, -194.000000)">
+            <g id="Reject" transform="translate(522.000000, 195.000000)">
+                <polygon id="Path-2" stroke="#E94D23" stroke-width="1.5" points="8.64490158 0 20.8182613 0 30 8.73819769 30 20.541594 20.8182613 30 8.64490158 30 0 20.541594 0 8.73819769"></polygon>
+                <text id="!" font-family="Monaco" font-size="22" font-weight="normal" fill="#E94D23">
+                    <tspan x="8" y="23">!</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

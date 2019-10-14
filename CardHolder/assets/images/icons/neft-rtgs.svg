@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="28px" viewBox="0 0 39 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>neft-rtgs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#3BBAE6" offset="0%"></stop>
+            <stop stop-color="#173F85" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#173F85" offset="0%"></stop>
+            <stop stop-color="#3BBAE6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#173F85" offset="0%"></stop>
+            <stop stop-color="#3BBAE6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#173F85" offset="0%"></stop>
+            <stop stop-color="#3BBAE6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-89.000000, -196.000000)">
+            <g id="neft-rtgs" transform="translate(89.000000, 196.000000)">
+                <g id="Group-916" transform="translate(16.440000, 14.000000) scale(-1, 1) translate(-16.440000, -14.000000) translate(0.440000, 0.000000)">
+                    <path d="M4.439472,2.28947368 C4.744992,1.36757895 5.596192,0.763157895 6.599392,0.763157895 L29.399392,0.763157895 C30.659472,0.763157895 31.679392,1.84836842 31.679392,3.18694737 L31.679392,21.2341053 C31.679392,22.5726842 30.659472,23.6578947 29.399392,23.6578947 L16.479392,23.6578947" id="Stroke-8437" stroke="url(#linearGradient-1)"></path>
+                    <path d="M11.16,26.7105263 L24.84,26.7105263" id="Stroke-8438" stroke="#3E5996"></path>
+                    <path d="M18,23.6578947 L18,26.7105263" id="Stroke-8439" stroke="#3E5996"></path>
+                    <path d="M16.48,17.5526316 L31.68,17.5526316" id="Stroke-8440" stroke="url(#linearGradient-2)"></path>
+                    <path d="M14.19848,18.3157895 L14.19924,22.2163743 C14.19924,23.4289474 13.17324,24.4210526 11.91924,24.4210526 L2.79924,24.4210526 C1.54524,24.4210526 0.51924,23.4289474 0.51924,22.2163743 L0.51924,6.78362576 C0.51924,5.57105266 1.54524,4.5789474 2.79924,4.5789474 L11.91924,4.5789474 C13.17324,4.5789474 14.19924,5.57105266 14.19924,6.78362576 L14.19848,12.2105263" id="Stroke-8443" stroke="url(#linearGradient-3)" transform="translate(7.359240, 14.500000) rotate(-180.000000) translate(-7.359240, -14.500000) "></path>
+                    <path d="M0.51924,19.8421053 L14.19924,19.8421053" id="Stroke-8444" stroke="url(#linearGradient-4)"></path>
+                    <path d="M0.51924,9.15789474 L14.19924,9.15789474" id="Stroke-8445" stroke="url(#linearGradient-4)"></path>
+                </g>
+                <path d="M27.36,13.7368421 L38,13.7368421" id="Path-2" stroke="#DF5435"></path>
+                <polyline id="Path-3" stroke="#DF5435" points="34.96 10.6842105 38 13.7368421 34.96 16.7894737"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

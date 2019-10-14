@@ -1,0 +1,36 @@
+24-09-2019 13:01:29 ==> Object reference not set to an instance of an object.	
+TargetSite : System.String GenerateOTP()	
+HelpLink: 	
+StackTrace:    at CardHolder.LoginNext.GenerateOTP() in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder\LoginNext.aspx.cs:line 519	
+	
+
+24-09-2019 13:15:14 ==> Object reference not set to an instance of an object.	
+TargetSite : System.String GenerateOTP()	
+HelpLink: 	
+StackTrace:    at CardHolder.LoginNext.GenerateOTP() in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder\LoginNext.aspx.cs:line 520	
+	
+
+24-09-2019 13:18:17 ==> Object reference not set to an instance of an object.	
+TargetSite : System.String GenerateOTP()	
+HelpLink: 	
+StackTrace:    at CardHolder.LoginNext.GenerateOTP() in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder\LoginNext.aspx.cs:line 522	
+	
+
+24-09-2019 13:19:08 ==> Object reference not set to an instance of an object.	
+TargetSite : System.String GenerateOTP()	
+HelpLink: 	
+StackTrace:    at CardHolder.LoginNext.GenerateOTP() in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder\LoginNext.aspx.cs:line 522	
+	
+
+24-09-2019 13:19:18 ==> Object reference not set to an instance of an object.	
+TargetSite : System.String GenerateOTP()	
+HelpLink: 	
+StackTrace:    at CardHolder.LoginNext.GenerateOTP() in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder\LoginNext.aspx.cs:line 522	
+	
+
+24-09-2019 14:28:17 ==> Object reference not set to an instance of an object.	
+TargetSite : System.String GenerateOTP()	
+HelpLink: 	
+StackTrace:    at CardHolder.LoginNext.GenerateOTP() in D:\Nitesh\Developments\Development\New design\Cardholder\CardHolder\LoginNext.aspx.cs:line 522	
+	
+

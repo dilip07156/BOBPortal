@@ -1,0 +1,27 @@
+2019-09-12 10:15:25.5622 CardHolderOracle.DAL.common ORA-03113: end-of-file on communication channel
+Process ID: 67568
+Session ID: 1346 Serial number: 34208
+2019-09-12 10:53:31.2317 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 10:54:10.6708 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 10:55:26.9275 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 11:22:39.8456 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 11:23:42.1939 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 11:24:24.4855 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 11:35:17.9182 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:35:17.9971 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:36:41.1370 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:36:41.2149 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:38:24.0292 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:38:24.3567 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:39:50.0723 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:39:50.1501 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:49:52.1269 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 11:49:52.2079 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-12 12:44:33.9880 CardHolderOracle.DAL.common SMS Fail ERROR:The remote server returned an error: (403) Forbidden.
+2019-09-12 14:07:04.6066 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-09-12 14:13:25.1183 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-09-12 14:16:48.2049 CardHolderOracle.DAL.common ORA-03113: end-of-file on communication channel
+Process ID: 147832
+Session ID: 1155 Serial number: 46685
+2019-09-12 14:21:24.6552 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-09-12 14:24:40.8656 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}

@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Simaple.master.cs" Inherits="CardHolder.Simaple" %>
+
+<%@ Register Src="RefeshUsercontrol.ascx" TagName="RefeshUsercontrol" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <asp:PlaceHolder ID="phJavaScripts" runat="server"></asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+    <!--[if IE]>
+<script type="text/javascript" src="javascript/PIE.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+ if ($("#hdnBack").val() != "") {
+            location.href = "/ErrorPage/CodeError.aspx";
+             return false;
+        }
+           });
+
+            </script>
+	
+       
+	</script>
+<![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (window.history && history.pushState) { // check for history api support
+
+                window.addEventListener('load', function () {
+                    // create history states
+                    history.pushState(-1, null); // back state
+                    history.pushState(0, null); // main state
+                    history.pushState(1, null); // forward state
+                    history.go(-1); // start in main state
+                    this.addEventListener('popstate', function (event, state) {
+                        // check history state and fire custom events
+
+                        if (state = event.state) {                          
+                            event = document.createEvent('Event');
+                            event.initEvent(state > 0 ? 'next' : 'previous', true, true);
+                            this.dispatchEvent(event);
+                            // reset state
+                            location.href = "/ErrorPage/CodeError.aspx";
+                            return false;
+                            //history.go(-state);
+                        }
+                    }, false);
+                }, false);
+            }
+
+        });
+
+        $(function () {
+            $(this).bind("contextmenu", function (e) {
+                e.preventDefault();
+            });
+
+            //            $('body').mousedown(function (e) {
+            //                if (e.button == 1) {
+            //                    alert("Middle click disabled");
+            //                    return false
+            //                }
+            //            });
+        });
+
+        $(window).load(function () {
+            $("#hdnBack").val("hello");
+        });
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            if (window.PIE) {
+                jQuery('.shadow').each(function () {
+                    PIE.attach(this);
+                });
+            }
+
+            //custom select option design
+            $('select:not(.ignore)').niceSelect();
+            FastClick.attach(document.body);
+        });
+
+        function disableBackButton() {
+            window.history.forward();
+        }
+        setTimeout("disableBackButton()", 0);
+        function OfflineOverrideBody() {
+            if (!navigator.onLine && document.body != null) {
+                document.body.innerHTML = "Your browser is running in offline mode. Please refresh your browser and log in again.";
+            }
+            setTimeout(OfflineOverrideBody, 100);
+        }
+        OfflineOverrideBody();
+    </script>
+    <link rel="Shortcut Icon" href="images/favicon.ico" />
+</head>
+<body onload="disableBackButton();" class="gradient-bg">
+    <noscript class="noscriptDiv">
+        <div id="scriptOffMsg">
+            This application uses Javascript. Your browser either doesn't support Javascript or you have it turned off.<br />
+            Some of the functionalities will not work if javascript off. To see this application as it is meant to appear please use a Javascript enabled browser.<br />
+            Please refresh page after turning Javascript on.
+        </div>
+    </noscript>
+    <input id="hdnBack" type="hidden" value="" />
+    <form id="form1" autocomplete="off" runat="server">
+        <asp:ScriptManager ID="scrptmgr" EnablePageMethods="True" runat="server"></asp:ScriptManager>
+        <!--SITE HEDAER-->
+        <header class="site-header pt-4 pb-4">
+            <div class="container-fluid">
+                <div class="row  align-items-center">
+                    <div class="col-12">
+                        <a class="brand" href="#">
+                            <img src="<%= this.Page.GetNewImagePath("BOB_Logo.png") %>" alt="bank of baroda logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+              
+            
+                        <div style="text-align: center" class="mb-2">                      
+                                <a href="https://www.bobfinancial.com/" style="color: white;">Home</a>                          
+                                <a target="_blank" href="https://www.bobfinancial.com/aboutus.jsp" style="color: white;margin-left:5px">About Us</a>                           
+                                <a href="https://www.bobfinancial.com/contact-us.jsp" style="color: white;;margin-left:5px">Contact Us</a>                           
+                                <a target="_blank" href="https://www.bobfinancial.com/disclaimer.jsp" style="color: white;;margin-left:5px">Disclaimer</a>                      
+                        </div>
+                   
+                        
+                        <div class="footerbtmleft mb-2" style="text-align: center;font-size:0.6rem;color:darkgrey">
+                            Copyrights 2018 - BOB Financial Solutions Limited
+                            <br>
+                            (formerly known as Bobcards Limited).All rights reserved.                          
+                            
+                        </div>
+                     
+                         <div class="footerbtmleft mb-4" style="text-align: center;font-size:0.6rem;color:darkgrey">
+                            Site best viewed at 1366x768 resolution in Chrome 30+, 
+                             <br>
+                             IE 11+, Firefox 27+, Android 5+ latest version of others                          
+                            
+                        </div>
+                        <%--<div class="footerbtmleft"  style="text-align: center;font-size:0.6rem">Site best viewed at 1366x768 resolution in Chrome 30+, IE 11+, Firefox 27+, Android 5+ latest version of others</div>
+                   --%>
+            
+
+    </form>
+
+
+</body>
+</html>

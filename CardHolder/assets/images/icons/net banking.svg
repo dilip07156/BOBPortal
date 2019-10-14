@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>net banking</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#173F85" offset="0%"></stop>
+            <stop stop-color="#3BBAE6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-223.000000, -190.000000)">
+            <g id="net-banking" transform="translate(224.000000, 190.000000)">
+                <path d="M3.95833333,31.2 L3.95833333,18.4" id="Stroke-832" stroke="#DF5435"></path>
+                <path d="M2.375,34.2 L35.625,34.2" id="Stroke-833" stroke="#173C83" stroke-linecap="round"></path>
+                <path d="M2.375,37.2 L35.625,37.2" id="Stroke-833" stroke="#173C83" stroke-linecap="round"></path>
+                <path d="M2.375,18.4 L10.2916667,18.4" id="Stroke-836" stroke="#DF5435" stroke-linecap="round"></path>
+                <path d="M15.0416667,31.2 L22.9583333,31.2" id="Stroke-837" stroke="#DF5435" stroke-linecap="round"></path>
+                <path d="M2.0416667,31.2 L9.9583333,31.2" id="Stroke-837" stroke="#DF5435" stroke-linecap="round"></path>
+                <path d="M15.0416667,18.4 L22.9583333,18.4" id="Stroke-838" stroke="#DF5435" stroke-linecap="round"></path>
+                <path d="M8.70833333,31.2 L8.70833333,18.4" id="Stroke-839" stroke="#DF5435"></path>
+                <path d="M16.625,31.2 L16.625,18.4" id="Stroke-840" stroke="#DF5435"></path>
+                <path d="M21.375,31.2 L21.375,18.4" id="Stroke-841" stroke="#DF5435"></path>
+                <path d="M27.7083333,31.2 L35.625,31.2" id="Stroke-842" stroke="#DF5435" stroke-linecap="round"></path>
+                <path d="M27.7083333,18.4 L35.625,18.4" id="Stroke-843" stroke="#DF5435" stroke-linecap="round"></path>
+                <path d="M29.2916667,31.2 L29.2916667,18.4" id="Stroke-844" stroke="#DF5435"></path>
+                <path d="M34.0416667,31.2 L34.0416667,18.4" id="Stroke-845" stroke="#DF5435"></path>
+                <polygon id="Stroke-846" stroke="url(#linearGradient-1)" points="0.791666667 15.2 37.2083333 15.2 19.0490833 0.8"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

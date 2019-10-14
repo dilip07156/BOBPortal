@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="25px" viewBox="0 0 32 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Group 1333</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="UI-StyleGuide" transform="translate(-592.000000, -653.000000)" stroke="#3E5996" stroke-width="1.5">
+            <g id="Group-1333" transform="translate(593.000000, 654.000000)">
+                <g id="Group-1332">
+                    <polyline id="Stroke-2794" points="0.163965517 8.86055385 3.76784483 13.9682462 7.91224138 9.24455385"></polyline>
+                    <polyline id="Stroke-2795" points="29.3534483 16 25.7508621 10.8923077 21.6051724 15.616"></polyline>
+                    <path d="M25.7027586,10.9374769 C26.7812069,16.3627077 22.7635345,21.6808615 17.2859483,22.9116308 C13.4661207,23.7719385 9.63594828,22.6174769 7.03034483,20.1744" id="Stroke-2796"></path>
+                    <path d="M3.77418103,13.9387077 C2.07633621,7.92886154 6.32159483,2.03101538 12.2284914,0.704246154 C16.3095259,-0.215138462 20.3957328,1.16209231 22.9922845,3.95470769" id="Stroke-2797"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

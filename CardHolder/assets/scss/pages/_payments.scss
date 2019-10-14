@@ -1,0 +1,49 @@
+﻿@import "../abstracts/variables";
+.card-row {
+    display: flex;
+
+    @media screen and (max-width: $break-large) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        display: block;
+    }
+
+    > .card {
+        flex: 1;
+        margin: 0 1.5rem 1.5rem 0;
+
+        @media screen and (max-width: $break-large) {
+            flex: 1 48%;
+            margin-right: 4%;
+
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            margin-right: 0;
+        }
+    }
+}
+
+.rbpaymenttype {
+    tr {
+        @media screen and (max-width: $break-medium) {
+            display: block;
+        }
+
+        td {
+            @media screen and (max-width: $break-medium) {
+                display: block;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+}

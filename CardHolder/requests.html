@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>layout</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- project style -->
+    <!--<link href="assets/scss/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="assets/scss/bob.min.css" rel="stylesheet" />
+    <link href="assets/scss/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="assets/scss/slick.css" rel="stylesheet" />
+    <link href="assets/scss/slick-theme.css" rel="stylesheet" />
+    <link href="assets/scss/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+
+    <div class="container-fluid">
+        <h2 class="sub-title mb-2">Requests</h2>
+        <div class="row">
+            <!--LEFT SECTION-->
+            <div class="col-lg-4">
+                <div class="list-group  request-list mb-4">
+                    <a href="#" class="list-group-item list-group-item-action">Requests Status</a>
+                    <a href="#" class="list-group-item list-group-item-action active">Regenerate PIN</a>
+                    <a href="#" class="list-group-item list-group-item-action">Block Card</a>
+                    <a href="#" class="list-group-item list-group-item-action">Manage International Limit</a>
+                    <a href="#" class="list-group-item list-group-item-action">Card Requests</a>
+                    <a href="#" class="list-group-item list-group-item-action">Auto Debit Payment Requests</a>
+                    <a href="#" class="list-group-item list-group-item-action">Bonus Point Redemption</a>
+                    <a href="#" class="list-group-item list-group-item-action">Balance Transfer Request</a>
+                    <a href="#" class="list-group-item list-group-item-action">EMI Request</a>
+                    <a href="#" class="list-group-item list-group-item-action">Loan Request</a>
+                    <a href="#" class="list-group-item list-group-item-action">Insuarnace/ Dispacth details of card</a>
+                    <a href="#" class="list-group-item list-group-item-action">Other Requests/ Complaints</a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <!--Regenerate PIN-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="mb-0">Regenerate PIN</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Credit Card Number<span class="orange">*</span></label>
+                                        <select class="form-control form-control-lg custom-select wide">
+                                            <option>5788XXXXXXXXXX345</option>
+                                            <option>5788XXXXXXXXXX340</option>
+                                        </select>
+                                        <small id="" class="form-text text-primary">Name of Card Holder: Rajvardhan Kapoor</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Select Reason<span class="orange">*</span></label>
+                                        <select class="form-control form-control-lg custom-select wide" id="SelectReason">
+                                            <option disabled selected>Select </option>
+                                            <option value="PinLost">PIN Lost</option>
+                                            <option value="ForgotPin">Forgot PIN</option>
+                                            <option value="NeedToGenerate">Need to regenerate</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="OTP">
+
+
+                                        <!--OTP-->
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-auto mr-auto">
+                                                    <label for="">Enter OTP<span class="orange">*</span></label>
+                                                </div>
+                                                <div class="col-auto"><a href="" class="primary-link link"><u>Resend</u></a></div>
+                                            </div>
+                                            <input type="text" class="form-control form-control-lg" id="Text4" placeholder="Enter OTP" required>
+                                            <div class="row">
+                                                <div class="col-auto mr-auto">
+                                                    <small id="" class="form-text">OTP has been sent to +91 98XXXXX6758</small>
+                                                    <div class="invalid-feedback">
+                                                        Incorrect OTP
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <small id="Small1" class="form-text">4:56 remaining</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="SetNewPin">
+                                        <!--info alert-->
+                                        <div class="alert alert-primary alert-dismissible fade show  mb-4 mt-3" role="alert">
+                                            <figure class="icon mr-2 alert-img">
+                                                <img src="assets/images/Success.png" alt="info-icon" width="22" />
+                                            </figure>
+                                            <span class="alert-content">OTP Verified!</span>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">Close</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Set New PIN<span class="orange">*</span></label>
+                                            <input id="" type="password" class="form-control form-control-lg" placeholder="Enter New PIN" aria-label="Enter New PIN" aria-describedby="button-enter-new-pin">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Confirm New PIN<span class="orange">*</span></label>
+                                            <div class="input-group custom-input-group">
+                                                <input id="confirmNewPin" type="password" class="form-control form-control-lg" placeholder="Re-enter New PIN" aria-label="Enter New PIN" aria-describedby="button-re-enter-new-pin">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-re-enter-new-pin">
+                                                        <img src="assets/images/eye-open.png">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg text-uppercase" id="PinSubmitBtn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Block Card-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="m-0">Block Card</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Credit Card Number<span class="orange">*</span></label>
+                                        <select class="form-control form-control-lg custom-select wide">
+                                            <option>5788XXXXXXXXXX345</option>
+                                            <option>5788XXXXXXXXXX340</option>
+                                        </select>
+                                        <small id="Small1" class="form-text text-primary">Name of Card Holder: Rajvardhan Kapoor</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Select Reason<span class="orange">*</span></label>
+                                        <select class="form-control form-control-lg custom-select wide" id="Select1">
+                                            <option disabled selected>Select Reason</option>
+                                            <option>PIN Lost</option>
+                                            <option>Forgot PIN</option>
+                                            <option>Need to regenerate</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox form-group">
+                                        <input type="checkbox" class="custom-control-input" id="acceptTerms" name="">
+                                        <label class="custom-control-label" for="acceptTerms">I accept the <a><u>Terms and Conditions*</u></a></label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg text-uppercase">Block</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Manage international limit-->
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="m-0">Manage International Limit</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Credit Card Number(s)<span class="orange">*</span></label>
+                                        <input type="text" class="form-control form-control-lg" id="Text2" aria-describedby="emailHelp" placeholder="Enter Credir Card Number" value="5788XXXXXXXXXX345">
+                                        <small id="Small3" class="form-text text-primary">Name of Card Holder: Rajvardhan Kapoor</small>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox form-group">
+                                        <input type="checkbox" class="custom-control-input enable-set-limit" id="internationalUsage" name="">
+                                        <label class="custom-control-label" for="internationalUsage">Enable International Usage</label>
+                                    </div>
+
+                                    <div class="form-group set-limit">
+                                        <label for="">Set Limit<span class="orange">*</span></label>
+                                        <div class="input-group input-group-lg">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="">₹</span>
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="" aria-describedby="" placeholder="Set Limit">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg text-uppercase">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Issuance Dispatch details of card-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Issuance / Dispatch details of card</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Credit Card Number<span class="orange">*</span></label>
+                                        <select class="form-control form-control-lg custom-select wide">
+                                            <option>5788XXXXXXXXXX345</option>
+                                            <option>5788XXXXXXXXXX340</option>
+                                        </select>
+                                        <small id="" class="form-text text-primary">Name of Card Holder: Rajvardhan Kapoor</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">View details of<span class="orange">*</span></label>
+                                        <select class="form-control form-control-lg custom-select wide">
+                                            <option disabled selected>Select </option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg text-uppercase">Proceed</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Bonus Point Redemption-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Bonus Point Redemption</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <div class="d-label mb-2">Account Number</div>
+                                    <div class="alert alert-secondary">
+                                        <div class="d-value">5788789976453452</div>
+                                        <div class="d-label">Rajvardhan Kapoor</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-label mb-2">Total Bonus Points Earned</div>
+                                    <div class="alert alert-secondary">
+                                        <div class="d-value">2240</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Bonus points you would like to redeem<span class="orange">*</span></label>
+                                    <input type="text" class="form-control form-control-lg" id="" placeholder=""/>
+                                </div>
+                                <div class="custom-control custom-checkbox form-group">
+                                    <input type="checkbox" class="custom-control-input" id="acceptTerms" name="">
+                                    <label class="custom-control-label" for="acceptTerms">I accept the <a><u>Terms and Conditions*</u></a></label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg text-uppercase">Redeem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Other request/ Complaints-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Other Request/ Complaints</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <div class="d-label mb-2">Credit Card</div>
+                                    <div class="alert alert-secondary">
+                                        <div class="d-value">5788789976453452</div>
+                                        <div class="d-label">Rajvardhan Kapoor</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-radio inline-control">
+                                        <input type="radio" class="custom-control-input" id="Reuquest" name="RequestType">
+                                        <label class="custom-control-label" for="Reuquest">Reuquest</label>
+                                    </div>
+                                    <div class="custom-control custom-radio inline-control">
+                                        <input type="radio" class="custom-control-input" id="Complaint" name="RequestType">
+                                        <label class="custom-control-label" for="Complaint">Complaint</label>
+                                    </div>
+                                </div>
+                                <!--<div class="form-group">
+        <label for="">Reason<span class="orange">*</span></label>
+        <select class="form-control form-control-lg custom-select wide">
+            <option disabled selected>Select </option>
+        </select>
+    </div>-->
+                                <div class="form-group">
+                                    <label for="">Appropriate Request<span class="orange">*</span></label>
+                                    <select class="form-control form-control-lg custom-select wide">
+                                        <option disabled selected>Select </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Description<span class="orange">*</span></label>
+                                    <textarea class="form-control form-control-lg"></textarea>
+                                </div>
+                                <div class="custom-control custom-checkbox form-group">
+                                    <input type="checkbox" class="custom-control-input" id="acceptTerms" name="">
+                                    <label class="custom-control-label" for="acceptTerms">I accept the <a><u>Terms and Conditions*</u></a></label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg text-uppercase">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Statement Delivery Mode-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Statement Delivery Mode</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <div class="d-label mb-2">Credit Card</div>
+                                    <div class="alert alert-secondary">
+                                        <div class="d-value">5788789976453452</div>
+                                        <div class="d-label">Rajvardhan Kapoor</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-md-5 mb-3">
+                                <label for="">From<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <label for="">To<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>                          
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <div><label>Select Mode<span class="orange">*</span></label></div>
+                                <div class="custom-control custom-checkbox inline-control">
+                                    <input type="checkbox" class="custom-control-input" id="Email" name="">
+                                    <label class="custom-control-label" for="Email">E-mail</label>
+                                </div>
+                                <div class="custom-control custom-checkbox inline-control">
+                                    <input type="checkbox" class="custom-control-input" id="HardCopy" name="">
+                                    <label class="custom-control-label" for="HardCopy">Hard Copy</label>
+                                </div>
+                                <div class="custom-control custom-checkbox inline-control">
+                                    <input type="checkbox" class="custom-control-input" id="Estatement" name="">
+                                    <label class="custom-control-label" for="Estatement">E-Statement</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg text-uppercase">Submit</button>
+                            </div>
+                                
+                            </div>
+                        </div>
+                </div>
+
+                <!--Card Request-->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6>Card Request</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Request Service<span class="orange">*</span></label>
+                                    <select class="form-control form-control-lg custom-select wide" id="RequestService">
+                                        <option disabled selected>Select </option>
+                                        <option value="AddOn">Request for Add-On card </option>
+                                        <option value="DeRegister">De- Register Credit Card </option>
+                                        <option value="Replacement">Card Replacement/Renewal </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--add on-->
+                        <div id="AddOn" class="request-service" style="display:none;">
+                            <div class="mb-3">
+                                <div class="d-label mb-2">Account Number</div>
+                                <div class="alert alert-secondary">
+                                    <div class="d-value">5788789976453452</div>
+                                    <div class="d-label">Rajvardhan Kapoor</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-label mb-2">Primary Credit Card</div>
+                                <div class="alert alert-secondary">
+                                    <div class="d-value">5788789976453452</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Full Name of Add-on Card Applicant<span class="orange">*</span></label>
+                                <input type="text" class="form-control form-control-lg" id="" aria-describedby="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Date of Birth<span class="orange">*</span></label>
+                                <div class="input-group  input-group-lg date-input-group">
+                                    <input data-date-format="dd/mm/yyyy" id="" type="text" class="form-control datepicker" placeholder="Select Date" aria-label="" aria-describedby="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="">
+                                            <img src="assets/images/Calendar.png" alt="calendar-icon" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Relationship with Primary Card Holder<span class="orange">*</span></label>
+                                <select class="form-control form-control-lg custom-select wide">
+                                    <option disabled selected>Select </option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <div><label>Gender<span class="orange">*</span></label></div>
+                                <div class="custom-control custom-radio inline-control">
+                                    <input type="radio" class="custom-control-input" id="Male" name="">
+                                    <label class="custom-control-label" for="Male">Male</label>
+                                </div>
+                                <div class="custom-control custom-radio inline-control">
+                                    <input type="radio" class="custom-control-input" id="Female" name="">
+                                    <label class="custom-control-label" for="Female">Female</label>
+                                </div>
+                                <div class="custom-control custom-radio inline-control">
+                                    <input type="radio" class="custom-control-input" id="Other" name="">
+                                    <label class="custom-control-label" for="Other">Other</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Upload Add-On-Photo</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile" name="filename" />
+                                    <label class="custom-file-label" for="customFile">Choose Photo</label>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox form-group">
+                                <input type="checkbox" class="custom-control-input" id="acceptTerms" name="">
+                                <label class="custom-control-label" for="acceptTerms">I accept the <a><u>Terms and Conditions*</u></a></label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg text-uppercase">Continue</button>
+                        </div>
+
+                        <!--DeRegister-->
+                        <div id="DeRegister" class="request-service" style="display:none;">
+                            <div class="mb-3">
+                                <div class="d-label mb-2">Account Number</div>
+                                <div class="alert alert-secondary">
+                                    <div class="d-value">5788789976453452</div>
+                                    <div class="d-label">Rajvardhan Kapoor</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <strong>
+                                    De-registration of the card is only from the portal, so here we should display a message that the de-registration is only from the portal and to avail the service again they have to register on the portal
+                                </strong>
+                            </div>
+                            <div class="custom-control custom-checkbox form-group">
+                                <input type="checkbox" class="custom-control-input" id="acceptTerms" name="">
+                                <label class="custom-control-label" for="acceptTerms">I accept the <a><u>Terms and Conditions*</u></a></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg text-uppercase">Continue</button>
+                        </div>
+
+                        <!--Replacement-->
+                        <div id="Replacement" class="request-service" style="display:none;">
+                            <div class="form-group">
+                                <label for="">Credit Card<span class="orange">*</span></label>
+                                <select class="form-control form-control-lg custom-select wide">
+                                    <option selected disabled> Select </option>
+                                    <option>5788XXXXXXXXXX345 </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Request Type<span class="orange">*</span></label>
+                                <select class="form-control form-control-lg custom-select wide">
+                                    <option selected disabled> Select </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Reason<span class="orange">*</span></label>
+                                <select class="form-control form-control-lg custom-select wide">
+                                    <option selected disabled> Select </option>
+                                </select>
+                            </div>
+                            <div class="custom-control custom-checkbox form-group">
+                                <input type="checkbox" class="custom-control-input" id="acceptTerms" name="">
+                                <label class="custom-control-label" for="acceptTerms">I accept the <a><u>Terms and Conditions*</u></a></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg text-uppercase">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/popper.min.js"></script>
+    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/slick.min.js"></script>
+    <!-- jQuery Custom Scroller -->
+    <script src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/scripts/jquery.nice-select.min.js"></script>
+    <script src="assets/scripts/bootstrap-datepicker.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".transaction-list").mCustomScrollbar({
+                theme: "minimal-dark"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                // hide sidebar
+                $('#sidebar').removeClass('active');
+                // hide overlay
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                // open sidebar
+                $('#sidebar').toggleClass('active');
+                // fade in the overlay
+                $('.overlay').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+            // add mCustomScrollbar on mobile device
+            /*if ($(window).width() <= 992) {
+                $(".request-list").mCustomScrollbar({
+                    theme: "minimal-dark"
+                });
+            }*/
+
+            // hamburger menu
+            var forEach = function (t, o, r) { if ("[object Object]" === Object.prototype.toString.call(t)) for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t) };
+
+            var hamburgers = document.querySelectorAll(".hamburger");
+            if (hamburgers.length > 0) {
+                forEach(hamburgers, function (hamburger) {
+                    hamburger.addEventListener("click", function () {
+                        this.classList.toggle("is-active");
+                    }, false);
+                });
+            }
+
+
+            //slick slider
+            $('.promotions').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 9999,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ]
+            });
+
+            $('select:not(.ignore)').niceSelect();
+            //FastClick.attach(document.body);
+
+            //datepicker
+            $('.datepicker').datepicker({
+                autoclose: true,
+                todayHighlight: true,
+            });
+
+
+        });
+
+        // ===== Scroll to Top ====
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+
+
+
+        //Regenerate PIN
+        $('#OTP, #SetNewPin').hide();
+        $('#PinSubmitBtn').attr("disabled", true);
+        $('#SelectReason').on('change', function () {
+            $('#OTP').fadeIn("slow");
+            $('#PinSubmitBtn').attr("disabled", false);
+            $('#SetNewPin').fadeOut("fast");
+        });
+
+        $('#PinSubmitBtn').on('click', function () {
+            $('#OTP').fadeOut("fast");
+            $('#SetNewPin').fadeIn("slow");
+        });
+
+        $(function () {
+            $('#RequestService').change(function () {
+                $('.request-service').fadeOut("fast");
+                $('#' + $(this).val()).fadeIn("slow");
+            })
+        });
+
+       
+        //show hide re pin
+        $("#button-re-enter-new-pin").on('click', function () {
+            var x = document.getElementById("confirmNewPin");
+            if (x.type === "password") {
+                x.type = "text";
+                $(this).html('<img src="assets/images/eye-close.png">');
+            } else {
+                x.type = "password";
+                $(this).html('<img src="assets/images/eye-open.png">');
+            }
+
+        });
+
+        //set limit
+        $(".set-limit").hide();
+        $(".enable-set-limit").click(function () {
+            if ($(this).is(":checked")) {
+                $(".set-limit").fadeIn("slow");
+            } else {
+                $(".set-limit").fadeOut("fast");
+            }
+        });
+
+
+       
+
+    </script>
+
+</body>
+</html>

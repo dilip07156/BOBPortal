@@ -1,0 +1,34 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+.site-header {
+    padding: 10px 0 5px;
+	-webkit-box-shadow: 0 0 11px rgba(0,0,0,0.13);
+    box-shadow: 0 0 11px rgba(0,0,0,0.13);
+	position:relative;
+	z-index: 999;
+    background-color:$white-color;
+    @media screen and (max-width: $break-large) {
+        border-bottom: 1px solid #e6e6f2;
+    -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.13);
+    box-shadow: 0 0 11px rgba(0,0,0,0.13);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    }
+}
+.brand {
+    display: inline-block;
+		img{
+			@media screen and (max-width: $break-large) {
+			height:24px;
+			}
+		}
+}
+.site-sub-header{
+@include brand-gradient;
+padding:15px 0;
+}
+
+

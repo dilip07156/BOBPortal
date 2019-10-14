@@ -1,0 +1,264 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.accordian-table {
+    border-collapse: separate !important;
+    border-spacing: 0 10px;
+
+    thead {
+        &::after {
+            content: "";
+            display: block;
+            height: 0.1em;
+            width: 100%;
+        }
+
+        tr {
+            background-color: $light-grey;
+            border-radius: 0.25rem;
+            @include card-shadow;
+        }
+
+        th {
+            border: 0;
+            font-weight: 400;
+        }
+    }
+
+    tbody {
+        tr {
+            border-radius: 0.25rem;
+            @include card-shadow;
+
+            td {
+                border: 0;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .hiddenRow {
+        padding: 0 !important;
+    }
+}
+
+.statement-accordian {
+    .card {
+        .card-header {
+            padding: 0;
+            background-color: $white-color;
+
+            .btn {
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 1rem;
+                text-decoration: none;
+                color: $primary-color;
+
+                &.collapsed {
+                    &:after {
+                        -webkit-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                    }
+                }
+
+                &:after {
+                    content: " ";
+                    background: url("../images/chevron.svg") no-repeat right center/14px 8px;
+                    -webkit-transform: rotate(-180deg);
+                    transform: rotate(-180deg);
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+            }
+
+            .statement-month {
+                @media screen and (max-width: $break-large) {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .card-body {
+            background-color: $light-grey;
+            padding: 1rem;
+        }
+    }
+}
+
+
+.mobile-table {
+    max-height: 250px;
+
+    table {
+        width: 100%;
+
+        thead {
+            tr {
+                th {
+                    font-size: 80%;
+                    font-weight: 500;
+                    padding: 5px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid rgba(0,0,0,0.07);
+
+                td {
+                    padding: 15px 5px;
+                    min-height:27px;
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-large) {
+        max-height: 100%;
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+            display: block;
+            font-size: 0.8rem;
+        }
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            margin: 0;
+            padding: 10px 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        tr:nth-child(odd) {
+            border-bottom: 1px solid rgba(0,0,0,0.07);
+        }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 0;
+            position: relative;
+            padding: 5px 0 5px 50% !important;
+            text-align: right;
+
+            &:nth-child(1), &:nth-child(2) {
+                font-weight: 500;
+            }
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 5px;
+            left: 0;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: 400;
+        }
+        /*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+        td:nth-of-type(1):before {
+            content: "Transaction Date";
+        }
+
+        td:nth-of-type(2):before {
+            content: "Amount in (INR)";
+        }
+
+        td:nth-of-type(3):before {
+            content: "Description";
+        }
+
+        td:nth-of-type(4):before {
+            content: "Details";
+        }
+    }
+}
+
+
+.datepicker {
+    &.datepicker-dropdown {
+        @media screen and (max-width: $break-large) {
+            border: 1px solid rgba(0, 0, 0, 0.15) !important;
+        }
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 10px;
+
+        @media screen and (max-width: $break-large) {
+            border-spacing: 5px;
+        }
+
+        tr {
+            td {
+                width: 30px !important;
+                height: 30px !important;
+                line-height: 30px !important;
+                border-radius: 90px !important;
+                font-size: 0.9rem;
+
+                &.active, &.today {
+                    background: $brand-color !important;
+                    color: $white-color !important;
+                }
+
+                span {
+                    &.active {
+                        background: $brand-color !important;
+                        color: $white-color !important;
+                    }
+                }
+            }
+        }
+    }
+
+    th {
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+}
+
+    .date-input-group {
+        .input-group-text {
+            background-color: $white-color;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+
+        .form-control {
+            border-right: 0;
+        }
+    }
+
+.custom-header{
+    background-color:$white-color;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}

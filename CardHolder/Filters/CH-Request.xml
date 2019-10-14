@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Requests>  
+  <Request type="ATM PIN Re-Generation Request">
+    <field Text="Reason">RequestReason_Id</field>
+  </Request>
+  <Request type="Statement Mode">
+    <field Text="Mode">Mode_Send_Statment</field>
+  </Request>
+
+  <Request type="Preserved statement request">
+    <field Text="Mode">Mode_Send_Statment</field>
+    <field Text="Statement Month">Statement_month</field>
+    <field Text="Statement Year">Statement_year</field>
+  </Request>
+  <Request type="Auto Debit De-Registration">
+    <field Text="Reason">RequestReason_Id</field>
+  </Request>
+  
+
+  <Request type="Blocking of Card">
+    <field Text="Card to be Hotlist">HotlistingCardNumber</field>
+    <field Text="Reason">RequestReason_Id</field>
+  </Request>
+  <Request type="Card Replacement">
+    <field Text="Reason">RequestReason_Id</field>
+  </Request>
+  <Request type="Card Renewal">
+    <field Text="Reason">RequestReason_Id</field>
+  </Request>
+  <Request type="AddON Card Request">
+    <field Text="Full Name of Add-On Card Applicant">Add_On_Card_Applicant</field>
+    <field Text="Date of Birth">DOB</field>
+    <field Text="Relation">Relation</field>   
+    <field Text="Gender">Gender</field>
+  </Request>
+  <Request type="Auto debit payment type">
+    <field Text="Payment Type">Payment_Type</field>
+  </Request>
+  <Request type="Bonus point Redemption">
+    <field Text="Points Wants To Redeem">Points_Wants_Redeem</field>    
+  </Request>
+  <Request type="Balance Transfer Request">
+    <field Text="Other Credit Card Number">OtherCreditCardNumber</field>
+    <field Text="Name Of Issuing Bank">Bank_nm</field>
+    <field Text="Amount to be Transfered(in INR)">Transferred_Amt</field>
+    <field Text="Plan">Balance_Transferred_Plan</field>
+  </Request>
+  <Request type="Balance Transfer Request">
+    <field Text="Other Credit Card Number">OtherCreditCardNumber</field>
+    <field Text="Name Of Issuing Bank">Bank_nm</field>
+    <field Text="Amount to be Transfered(in INR)">Transferred_Amt</field>
+    <field Text="Plan">Balance_Transferred_Plan</field>
+  </Request>
+  <Request type="EMI Request">
+    <field Text="Amount">EMI_Principal_Amt</field>
+    <field Text="Terms(In months)">EMI_Terms</field>
+    <field Text="Annual Interest Rate (%)">EMI_InterestRate</field>
+    <field Text="EMI (in INR)">EMI_Amount</field>    
+  </Request>
+  <Request type="Loan Request">
+    <field Text="Amount">Loan_Principal_Amt</field>
+    <field Text="Terms(In months)">Loan_Terms</field>
+    <field Text="Annual Interest Rate (%)">Loan_InterestRate</field>
+    <field Text="EMI (in INR)">Loan_Amount</field>    
+  </Request>
+  <!--<Request type="Address change">
+    <field Text="Remarks">Remarks</field>
+  </Request>
+  <Request type="Other Request">
+    <field Text="Remarks">Remarks</field>
+  </Request>-->
+</Requests>

@@ -1,0 +1,200 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.divtable {
+    @include card-shadow;
+
+    .tr {
+        overflow: hidden;
+        clear: both;
+        background-color: $white-color;
+        border-radius: 3px;
+
+
+        &.headings {
+            background-color: $white-color !important;
+            border-bottom: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        &:nth-child(odd) {
+            background-color: $light-grey;
+        }
+    }
+
+    .th, .td {
+        float: left;
+        padding: 1.5rem;
+
+        &.emi-date {
+            padding: 1.25rem 1.5rem;
+
+            .date-text, .select-all {
+                position: relative;
+                top: 6px;
+            }
+
+            .select-all {
+                left: 12px;
+            }
+        }
+    }
+
+
+
+    .td {
+        @media screen and (max-width: $break-large) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.request-type, .request-status, .request-number, .request-date, .emi-date, .emi-card-number, .emi-merchant-name, .emi-amount {
+    width: 25%;
+}
+
+.request-reason {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    background-color: $light-grey;
+    padding: 1.25rem !important;
+
+    @media screen and (max-width: $break-large) {
+        margin: 0 -1.25rem!important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .accordion-xs {
+        .emi-heading {
+            display: block !important;
+
+            .th {
+                display: none;
+                padding: 1.25rem;
+            }
+
+            .emi-date {
+                display: block !important;
+            }
+        }
+
+        .headings {
+            display: none;
+        }
+
+        .th, .td {
+            float: none;
+            width: auto;
+            padding: 0;
+        }
+
+        .accordion-xs-toggle {
+            cursor: pointer;
+            margin-bottom: 0 !important;
+            padding: 1.25rem;
+
+            &:hover {
+            }
+
+            &:after {
+                position: relative;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                background: url("../images/chevron.svg") no-repeat right .3rem center/14px 8px;
+                content: '';
+                float: right;
+                transition-duration: .2s;
+                top: -35px;
+            }
+
+            &.collapsed {
+                &:after {
+                    transform: rotate(-180deg);
+                }
+            }
+
+            &.request-status {
+                padding-top: 0;
+
+                &:after {
+                    content: none;
+                }
+            }
+
+            &.emi-date {
+                position: relative;
+                padding-left: 70px;
+
+                .custom-control {
+                    position: absolute;
+                    left: 1.25rem;
+                    top: 0.9rem;
+                }
+
+                &:before {
+                    content: 'Date';
+                }
+
+                .date-text {
+                    display: block;
+                }
+
+                
+            }
+        }
+
+        .accordion-xs-collapse {
+            .td {
+                &:before {
+                    font-weight: 300;
+                    display: block;
+                }
+            }
+
+            .request-number {
+                &:before {
+                    content: 'Request Number ';
+                }
+            }
+
+            .request-date {
+                &:before {
+                    content: 'Request Date ';
+                }
+            }
+
+            .request-status {
+                &:before {
+                    content: 'Request Status';
+                }
+            }
+
+
+
+            .emi-card-number {
+                &:before {
+                    content: 'Card Number';
+                }
+            }
+
+            .emi-merchant-name {
+                &:before {
+                    content: 'Merchant Name';
+                }
+            }
+
+            .emi-amount {
+                &:before {
+                    content: 'Amount';
+                }
+            }
+
+            .inner {
+                padding: 0 1.25rem 0 4.4rem;
+            }
+        }
+    }
+}

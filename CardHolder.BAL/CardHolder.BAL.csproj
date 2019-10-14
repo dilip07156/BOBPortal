@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BDFACBF-3042-4E11-870C-4B4AA268F587}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardHolder.BAL</RootNamespace>
+    <AssemblyName>CardHolder.BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CardHolder.Utility">
+      <HintPath>..\CardHolder.Utility\bin\Debug\CardHolder.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\..\DLLs\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSummaryManager.cs" />
+    <Compile Include="ApplicationManager.cs" />
+    <Compile Include="CardHolderComplaintManager.cs" />
+    <Compile Include="CardHolderLoginInfoManager.cs" />
+    <Compile Include="CardHolderManager.cs" />
+    <Compile Include="CardHolderPaymentManager.cs" />
+    <Compile Include="CardHolderReasonManager.cs" />
+    <Compile Include="CardHolderRequestManager.cs" />
+    <Compile Include="CardManager.cs" />
+    <Compile Include="CHRequestDetailManager.cs" />
+    <Compile Include="Controller\CHComplaintView.cs" />
+    <Compile Include="Controller\CHRequestView.cs" />
+    <Compile Include="Controller\Field.cs" />
+    <Compile Include="DispatchDetailManager.cs" />
+    <Compile Include="DropdownManager.cs" />
+    <Compile Include="ParameterManager.cs" />
+    <Compile Include="SpendAnalyserManager.cs" />
+    <Compile Include="TransactionManager.cs" />
+    <Compile Include="GeneralManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardHolder.DAL\CardHolder.DAL.csproj">
+      <Project>{9E78C732-D694-4274-B20D-F96BE9E2AB5E}</Project>
+      <Name>CardHolder.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardHolder.DTO\CardHolder.DTO.csproj">
+      <Project>{C688E9E7-9EB9-4BF1-85F3-4EA23E417A32}</Project>
+      <Name>CardHolder.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardHolderOracle.DAL\CardHolderOracle.DAL.csproj">
+      <Project>{63D16B38-6F22-4B91-ABBC-6866BA665B6D}</Project>
+      <Name>CardHolderOracle.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

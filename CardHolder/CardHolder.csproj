@@ -1,0 +1,1002 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9682197D-61DF-4213-B9D0-97BE2B929F9D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardHolder</RootNamespace>
+    <AssemblyName>CardHolder</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary">
+      <HintPath>Lib\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="BOBSymmetricCipherUtil, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\bfslportaldev\Desktop\Avani\LatestLiveCodeFolder\23_07_2019\Cardholder\CardHolder\EncryptionPackages\BOBSymmetricCipherUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomServerControl">
+      <HintPath>..\..\DLLs\CustomServerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.ClassLibrary, Version=0.36.0.11, Culture=neutral, PublicKeyToken=13235d27fcbfff58">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\bfslportaldev\Desktop\Avani\LatestLiveCodeFolder\23_07_2019\Cardholder\CardHolder\EncryptionPackNew\Common_Shp_40\Bin\IKVM.OpenJDK.ClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=0.36.0.11, Culture=neutral, PublicKeyToken=13235d27fcbfff58">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\bfslportaldev\Desktop\Avani\LatestLiveCodeFolder\23_07_2019\Cardholder\CardHolder\EncryptionPackNew\Common_Shp_40\Bin\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MSCaptcha">
+      <HintPath>..\..\DLLs\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLs\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\app\User\product\11.2.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountSummary\AccountSummary.aspx" />
+    <Content Include="Application.aspx" />
+    <Content Include="ApplicationFormDownload.aspx" />
+    <Content Include="ApplicationPreview.aspx" />
+    <Content Include="ApplicationSuccess.aspx" />
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="assets\images\Approve.png" />
+    <Content Include="assets\images\backtotop.svg" />
+    <Content Include="assets\images\Bank_of_Baroda_logo.png" />
+    <Content Include="assets\images\banner.png" />
+    <Content Include="assets\images\bill desk.svg" />
+    <Content Include="assets\images\Block card.svg" />
+    <Content Include="assets\images\BOB_Logo.png" />
+    <Content Include="assets\images\Calendar.svg" />
+    <Content Include="assets\images\cash.svg" />
+    <Content Include="assets\images\Change PIN.svg" />
+    <Content Include="assets\images\Chat.svg" />
+    <Content Include="assets\images\cheque.svg" />
+    <Content Include="assets\images\Chevron.svg" />
+    <Content Include="assets\images\clock.svg" />
+    <Content Include="assets\images\Close.svg" />
+    <Content Include="assets\images\credit_tag.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\equal.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\eye-close.svg" />
+    <Content Include="assets\images\eye-open.svg" />
+    <Content Include="assets\images\Fail.svg" />
+    <Content Include="assets\images\frown-face.svg" />
+    <Content Include="assets\images\help.svg" />
+    <Content Include="assets\images\index.ajax-spinner-preloader.gif" />
+    <Content Include="assets\images\info.svg" />
+    <Content Include="assets\images\limit.svg" />
+    <Content Include="assets\images\Loginbanner.svg" />
+    <Content Include="assets\images\minu.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\neft-rtgs.svg" />
+    <Content Include="assets\images\net banking.svg" />
+    <Content Include="assets\images\payment-failure.svg" />
+    <Content Include="assets\images\Pending.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\plus.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\Process.svg" />
+    <Content Include="assets\images\Promotiongraphic.jpg" />
+    <Content Include="assets\images\receipt.svg" />
+    <Content Include="assets\images\Reject.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\Rewards.svg" />
+    <Content Include="assets\images\Success.svg" />
+    <Content Include="assets\images\Tick.svg" />
+    <Content Include="assets\scripts\bootstrap-datepicker.min.js" />
+    <Content Include="assets\scripts\bootstrap.min.js" />
+    <Content Include="assets\scripts\jquery-1.7.1.js" />
+    <Content Include="assets\scripts\jquery-1.7.1.min.js" />
+    <Content Include="assets\scripts\jquery-slim.min.js" />
+    <Content Include="assets\scripts\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="assets\scripts\jquery.min.js" />
+    <Content Include="assets\scripts\jquery.nice-select.min.js" />
+    <Content Include="assets\scripts\modernizr.min.js" />
+    <Content Include="assets\scripts\popper.min.js" />
+    <Content Include="assets\scripts\slick.min.js" />
+    <Content Include="assets\scss\ajax-loader.gif" />
+    <Content Include="assets\scss\bob.css" />
+    <Content Include="assets\scss\bob.min.css">
+      <DependentUpon>bob.css</DependentUpon>
+    </Content>
+    <Content Include="assets\scss\bootstrap-datepicker.min.css" />
+    <Content Include="assets\scss\bootstrap.min.css" />
+    <Content Include="assets\scss\fontawesome.min.css" />
+    <Content Include="assets\scss\fonts\rubik-v8-latin-regular.svg" />
+    <Content Include="assets\scss\fonts\slick.svg" />
+    <Content Include="assets\scss\jquery.mCustomScrollbar.min.css" />
+    <Content Include="assets\scss\slick-theme.css" />
+    <Content Include="assets\scss\slick.css" />
+    <Content Include="bin\AntiXSSLibrary.dll" />
+    <Content Include="bin\BOBSymmetricCipherUtil.dll" />
+    <Content Include="bin\CardHolder.BAL.dll" />
+    <Content Include="bin\CardHolder.BAL.pdb" />
+    <Content Include="bin\CardHolder.DAL.dll" />
+    <Content Include="bin\CardHolder.DAL.pdb" />
+    <Content Include="bin\CardHolder.dll" />
+    <Content Include="bin\CardHolder.DTO.dll" />
+    <Content Include="bin\CardHolder.DTO.pdb" />
+    <Content Include="bin\CardHolder.pdb" />
+    <Content Include="bin\CardHolder.Utility.dll" />
+    <Content Include="bin\CardHolder.Utility.pdb" />
+    <Content Include="bin\CardHolderOracle.DAL.dll" />
+    <Content Include="bin\CardHolderOracle.DAL.pdb" />
+    <Content Include="bin\CustomServerControl.dll" />
+    <Content Include="bin\DataDictionary.xml" />
+    <Content Include="bin\Elmah.dll" />
+    <Content Include="bin\IKVM.OpenJDK.ClassLibrary.dll" />
+    <Content Include="bin\IKVM.Runtime.dll" />
+    <Content Include="bin\LinqKit.dll" />
+    <Content Include="bin\MSCaptcha.dll" />
+    <Content Include="bin\NLog.dll" />
+    <Content Include="bin\StructureMap.dll" />
+    <Content Include="bin\StructureMap.pdb" />
+    <Content Include="bin\StructureMap.xml" />
+    <Content Include="BobibankingPay.aspx" />
+    <Content Include="Bobibanking_payment_process.aspx" />
+    <Content Include="Captchaa.aspx" />
+    <Content Include="Card\CardStatement.aspx" />
+    <Content Include="Card\PaymentCreditDetail.aspx" />
+    <Content Include="Card\PaymentProcess.aspx" />
+    <Content Include="Card\PrintCardStatement.aspx" />
+    <Content Include="Card\PrintPaymentSlip.aspx" />
+    <Content Include="Card\PaymentRequest.aspx" />
+    <Content Include="Card\UnbilledTransactions.aspx" />
+    <Content Include="css\ie-style.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.keypad.css" />
+    <Content Include="css\keyboard.css" />
+    <Content Include="css\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\style_form.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\thickbox.css" />
+    <Content Include="EncryptDecrcypt4All.aspx" />
+    <Content Include="ErrorPage\CodeError.aspx" />
+    <Content Include="ErrorPage\WebError.aspx" />
+    <Content Include="Filters\CH-Request.xml" />
+    <Content Include="fonts\aurulentsans-regular-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="ForgotUsername.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\app-form-logo.png" />
+    <Content Include="images\application-form-2nd-step.jpg" />
+    <Content Include="images\application-form-3rd-step.jpg" />
+    <Content Include="images\application-form-4th-step.jpg" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\border-table.png" />
+    <Content Include="images\bottomborder.jpg" />
+    <Content Include="images\bullet-list.png" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\button-bg.jpg" />
+    <Content Include="images\checkbox.png" />
+    <Content Include="images\contractstatusselect.jpg" />
+    <Content Include="images\datepick.png" />
+    <Content Include="images\delectcross.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\disble-btn.png" />
+    <Content Include="images\dot-line.jpg" />
+    <Content Include="images\down.png" />
+    <Content Include="images\download-icon.png" />
+    <Content Include="images\dummy-logo-2.png" />
+    <Content Include="images\dummy-logo.png" />
+    <Content Include="images\edit-tool.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\goto.png" />
+    <Content Include="images\index.ajax-spinner-preloader.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\key.png" />
+    <Content Include="images\left-arrow.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\loading3.gif" />
+    <Content Include="images\login-bg.png" />
+    <Content Include="images\login-key.png" />
+    <Content Include="images\logo-old.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\logo11.png" />
+    <Content Include="images\logo_2.png" />
+    <Content Include="images\mailer-banner.jpg" />
+    <Content Include="images\menusub-bg.jpg" />
+    <Content Include="images\nav-b-1.jpg" />
+    <Content Include="images\nav-b-2.jpg" />
+    <Content Include="images\nav-b-3.jpg" />
+    <Content Include="images\nav-b-4.jpg" />
+    <Content Include="images\nav-b-5.jpg" />
+    <Content Include="images\nav-b-6.jpg" />
+    <Content Include="images\nav-b-7.jpg" />
+    <Content Include="images\new.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\orange-btn-lt.png" />
+    <Content Include="images\orange-btn-rt.png" />
+    <Content Include="images\pagination-hover.png" />
+    <Content Include="images\pagination-left.png" />
+    <Content Include="images\pagination-right.png" />
+    <Content Include="images\pdf-icon.png" />
+    <Content Include="images\pdf.png" />
+    <Content Include="images\pop-close-btn.png" />
+    <Content Include="images\print-icon.png" />
+    <Content Include="images\print.png" />
+    <Content Include="images\printer.png" />
+    <Content Include="images\profile-img.png" />
+    <Content Include="images\radio.png" />
+    <Content Include="images\right-arrow.png" />
+    <Content Include="images\searchicon.png" />
+    <Content Include="images\searchicon1.png" />
+    <Content Include="images\sideLogo.png" />
+    <Content Include="images\small-logo.gif" />
+    <Content Include="images\sublink-arrow.png" />
+    <Content Include="images\ta-logo.jpg" />
+    <Content Include="images\tab-lt.png" />
+    <Content Include="images\tab-rt.png" />
+    <Content Include="images\top-link-ico.png" />
+    <Content Include="images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="images\ui-icons_222222_256x240.png" />
+    <Content Include="images\ui-icons_228ef1_256x240.png" />
+    <Content Include="images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="images\ui-icons_ffffff_256x240.png" />
+    <Content Include="images\up.png" />
+    <Content Include="InterestCalculator.aspx" />
+    <Content Include="javascript\bind.js" />
+    <Content Include="javascript\css_browser_selector.js" />
+    <Content Include="javascript\DateTimePicker.js" />
+    <Content Include="javascript\form-element.js" />
+    <Content Include="javascript\General.js" />
+    <Content Include="javascript\jquery-1.7.1.js" />
+    <Content Include="javascript\jquery-1.7.1.min.js" />
+    <Content Include="javascript\jquery-1.8.3.js" />
+    <Content Include="javascript\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="javascript\jquery-ui.js" />
+    <Content Include="javascript\jquery-ui.min.js" />
+    <Content Include="javascript\jquery.stylish-select.js" />
+    <Content Include="javascript\PIE.js" />
+    <Content Include="javascript\thickbox_3.1.js" />
+    <Content Include="Lib\AntiXSSLibrary.dll" />
+    <Content Include="Lib\Elmah.dll" />
+    <Content Include="Lib\StructureMap.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginNext.aspx" />
+    <Content Include="MailTemplates\Application.htm" />
+    <Content Include="MailTemplates\OTPEmail.htm" />
+    <Content Include="MailTemplates\ForgotUsername.htm" />
+    <Content Include="MailTemplates\Registration.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\ATM_PIN_Regeneration.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\AutoDebitPaymentType.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\BalanceTransferRequest.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\BlockingCard.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\BonusPointRedemption.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\AutoDebitDeRegistration.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\LoanRequest.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\CreditCardReplacementRenewal.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\DeRegisterCreditCard.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\EMIRequest.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\OtherRequest_Complaint.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\PreserveStatementRequest.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\RequestAddonCardPage.htm" />
+    <Content Include="MailTemplates\ServiceRequestTemplates\StatementRequest.htm" />
+    <Content Include="Maintance.htm" />
+    <Content Include="Payee.aspx" />
+    <Content Include="payment_process.aspx" />
+    <Content Include="RefeshUsercontrol.ascx" />
+    <Content Include="RefreshUserControlSite.ascx" />
+    <Content Include="ServiceRequest\ATM_PIN_Regeneration.aspx" />
+    <Content Include="ServiceRequest\AutoDebitDe_Registration.aspx" />
+    <Content Include="ServiceRequest\AutoDebitPaymentType.aspx" />
+    <Content Include="ServiceRequest\BalanceTransferRequest.aspx" />
+    <Content Include="ServiceRequest\BlockingCard.aspx" />
+    <Content Include="ServiceRequest\BonusPointRedemption.aspx" />
+    <Content Include="ServiceRequest\CardRequest.aspx" />
+    <Content Include="ServiceRequest\InternationlLimitOpenClose.aspx" />
+    <Content Include="ServiceRequest\LoanRequest.aspx" />
+    <Content Include="ServiceRequest\CreditCardReplacementRenewal.aspx" />
+    <Content Include="ServiceRequest\DeRegisterCreditCard.aspx" />
+    <Content Include="ServiceRequest\EMIRequest.aspx" />
+    <Content Include="ServiceRequest\Issuance_Dispatch_Dtl_CardPin.aspx" />
+    <Content Include="ServiceRequest\OtherRequest_Complaint.aspx" />
+    <Content Include="ServiceRequest\PreserveStatementRequest.aspx" />
+    <Content Include="ServiceRequest\RequestAddonCardPage.aspx" />
+    <Content Include="ServiceRequest\Request_ComplaintStatus.aspx" />
+    <Content Include="ServiceRequest\StatementDeliveryMode.aspx" />
+    <Content Include="SpendAnalyser.aspx" />
+    <Content Include="Card\StatementDownload.aspx" />
+    <Content Include="terms_conditions.htm" />
+    <Content Include="test.html" />
+    <Content Include="TestBobibanking.aspx" />
+    <Content Include="UserManagment\ChangePassword.aspx" />
+    <Content Include="UserManagment\ProfileOLD.aspx" />
+    <Content Include="UserManagment\Profile.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="javascript\VirtualKeyboard\vkbobcard.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSummary\AccountSummary.aspx.cs">
+      <DependentUpon>AccountSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountSummary\AccountSummary.aspx.designer.cs">
+      <DependentUpon>AccountSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application.aspx.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application.aspx.designer.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationFormDownload.aspx.cs">
+      <DependentUpon>ApplicationFormDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationFormDownload.aspx.designer.cs">
+      <DependentUpon>ApplicationFormDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationPreview.aspx.cs">
+      <DependentUpon>ApplicationPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationPreview.aspx.designer.cs">
+      <DependentUpon>ApplicationPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationSuccess.aspx.cs">
+      <DependentUpon>ApplicationSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationSuccess.aspx.designer.cs">
+      <DependentUpon>ApplicationSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BobibankingPay.aspx.cs">
+      <DependentUpon>BobibankingPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BobibankingPay.aspx.designer.cs">
+      <DependentUpon>BobibankingPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bobibanking_payment_process.aspx.cs">
+      <DependentUpon>Bobibanking_payment_process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bobibanking_payment_process.aspx.designer.cs">
+      <DependentUpon>Bobibanking_payment_process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Captchaa.aspx.cs">
+      <DependentUpon>Captchaa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Captchaa.aspx.designer.cs">
+      <DependentUpon>Captchaa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\CardStatement.aspx.cs">
+      <DependentUpon>CardStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\CardStatement.aspx.designer.cs">
+      <DependentUpon>CardStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\PaymentCreditDetail.aspx.cs">
+      <DependentUpon>PaymentCreditDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\PaymentCreditDetail.aspx.designer.cs">
+      <DependentUpon>PaymentCreditDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\PaymentProcess.aspx.cs">
+      <DependentUpon>PaymentProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\PaymentProcess.aspx.designer.cs">
+      <DependentUpon>PaymentProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\PrintCardStatement.aspx.cs">
+      <DependentUpon>PrintCardStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\PrintCardStatement.aspx.designer.cs">
+      <DependentUpon>PrintCardStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\PrintPaymentSlip.aspx.cs">
+      <DependentUpon>PrintPaymentSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\PrintPaymentSlip.aspx.designer.cs">
+      <DependentUpon>PrintPaymentSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\PaymentRequest.aspx.cs">
+      <DependentUpon>PaymentRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\PaymentRequest.aspx.designer.cs">
+      <DependentUpon>PaymentRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\UnbilledTransactions.aspx.cs">
+      <DependentUpon>UnbilledTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\UnbilledTransactions.aspx.designer.cs">
+      <DependentUpon>UnbilledTransactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptDecrcypt4All.aspx.cs">
+      <DependentUpon>EncryptDecrcypt4All.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EncryptDecrcypt4All.aspx.designer.cs">
+      <DependentUpon>EncryptDecrcypt4All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage\CodeError.aspx.cs">
+      <DependentUpon>CodeError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage\CodeError.aspx.designer.cs">
+      <DependentUpon>CodeError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage\WebError.aspx.cs">
+      <DependentUpon>WebError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage\WebError.aspx.designer.cs">
+      <DependentUpon>WebError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotUsername.aspx.cs">
+      <DependentUpon>ForgotUsername.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotUsername.aspx.designer.cs">
+      <DependentUpon>ForgotUsername.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\BOBRewriter.cs" />
+    <Compile Include="Helper\LoggedInUser.cs" />
+    <Compile Include="InterestCalculator.aspx.cs">
+      <DependentUpon>InterestCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InterestCalculator.aspx.designer.cs">
+      <DependentUpon>InterestCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginNext.aspx.cs">
+      <DependentUpon>LoginNext.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginNext.aspx.designer.cs">
+      <DependentUpon>LoginNext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecaptchaApiResponse.cs" />
+    <Compile Include="RequestSite.Master.cs">
+      <DependentUpon>RequestSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestSite.Master.designer.cs">
+      <DependentUpon>RequestSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Request\ATMPINRequest.cs" />
+    <Compile Include="Request\CardBlockRequest.cs" />
+    <Compile Include="Request\CommonRequest.cs" />
+    <Compile Include="Payee.aspx.cs">
+      <DependentUpon>Payee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payee.aspx.designer.cs">
+      <DependentUpon>Payee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment_process.aspx.cs">
+      <DependentUpon>payment_process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment_process.aspx.designer.cs">
+      <DependentUpon>payment_process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefeshUsercontrol.ascx.cs">
+      <DependentUpon>RefeshUsercontrol.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RefeshUsercontrol.ascx.designer.cs">
+      <DependentUpon>RefeshUsercontrol.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RefreshUserControlSite.ascx.cs">
+      <DependentUpon>RefreshUserControlSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RefreshUserControlSite.ascx.designer.cs">
+      <DependentUpon>RefreshUserControlSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Request\InternationlLimitRequest.cs" />
+    <Compile Include="Request\PaymentAcknowledgementRequest.cs" />
+    <Compile Include="Response\CommonResponse.cs" />
+    <Compile Include="ServiceRequest\ATM_PIN_Regeneration.aspx.cs">
+      <DependentUpon>ATM_PIN_Regeneration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\ATM_PIN_Regeneration.aspx.designer.cs">
+      <DependentUpon>ATM_PIN_Regeneration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\AutoDebitDe_Registration.aspx.cs">
+      <DependentUpon>AutoDebitDe_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\AutoDebitDe_Registration.aspx.designer.cs">
+      <DependentUpon>AutoDebitDe_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\AutoDebitPaymentType.aspx.cs">
+      <DependentUpon>AutoDebitPaymentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\AutoDebitPaymentType.aspx.designer.cs">
+      <DependentUpon>AutoDebitPaymentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\BalanceTransferRequest.aspx.cs">
+      <DependentUpon>BalanceTransferRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\BalanceTransferRequest.aspx.designer.cs">
+      <DependentUpon>BalanceTransferRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\BlockingCard.aspx.cs">
+      <DependentUpon>BlockingCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\BlockingCard.aspx.designer.cs">
+      <DependentUpon>BlockingCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\BonusPointRedemption.aspx.cs">
+      <DependentUpon>BonusPointRedemption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\BonusPointRedemption.aspx.designer.cs">
+      <DependentUpon>BonusPointRedemption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\CardRequest.aspx.cs">
+      <DependentUpon>CardRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\CardRequest.aspx.designer.cs">
+      <DependentUpon>CardRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\InternationlLimitOpenClose.aspx.cs">
+      <DependentUpon>InternationlLimitOpenClose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\InternationlLimitOpenClose.aspx.designer.cs">
+      <DependentUpon>InternationlLimitOpenClose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\LoanRequest.aspx.cs">
+      <DependentUpon>LoanRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\LoanRequest.aspx.designer.cs">
+      <DependentUpon>LoanRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\CreditCardReplacementRenewal.aspx.cs">
+      <DependentUpon>CreditCardReplacementRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\CreditCardReplacementRenewal.aspx.designer.cs">
+      <DependentUpon>CreditCardReplacementRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\DeRegisterCreditCard.aspx.cs">
+      <DependentUpon>DeRegisterCreditCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\DeRegisterCreditCard.aspx.designer.cs">
+      <DependentUpon>DeRegisterCreditCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\EMIRequest.aspx.cs">
+      <DependentUpon>EMIRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\EMIRequest.aspx.designer.cs">
+      <DependentUpon>EMIRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\Issuance_Dispatch_Dtl_CardPin.aspx.cs">
+      <DependentUpon>Issuance_Dispatch_Dtl_CardPin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\Issuance_Dispatch_Dtl_CardPin.aspx.designer.cs">
+      <DependentUpon>Issuance_Dispatch_Dtl_CardPin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\OtherRequest_Complaint.aspx.cs">
+      <DependentUpon>OtherRequest_Complaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\OtherRequest_Complaint.aspx.designer.cs">
+      <DependentUpon>OtherRequest_Complaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\PreserveStatementRequest.aspx.cs">
+      <DependentUpon>PreserveStatementRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\PreserveStatementRequest.aspx.designer.cs">
+      <DependentUpon>PreserveStatementRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\RequestAddonCardPage.aspx.cs">
+      <DependentUpon>RequestAddonCardPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\RequestAddonCardPage.aspx.designer.cs">
+      <DependentUpon>RequestAddonCardPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\Request_ComplaintStatus.aspx.cs">
+      <DependentUpon>Request_ComplaintStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\Request_ComplaintStatus.aspx.designer.cs">
+      <DependentUpon>Request_ComplaintStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest\StatementDeliveryMode.aspx.cs">
+      <DependentUpon>StatementDeliveryMode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceRequest\StatementDeliveryMode.aspx.designer.cs">
+      <DependentUpon>StatementDeliveryMode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\CardHolder.cs" />
+    <Compile Include="Simaple.Master.cs">
+      <DependentUpon>Simaple.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Simaple.Master.designer.cs">
+      <DependentUpon>Simaple.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SpendAnalyser.aspx.cs">
+      <DependentUpon>SpendAnalyser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpendAnalyser.aspx.designer.cs">
+      <DependentUpon>SpendAnalyser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card\StatementDownload.aspx.cs">
+      <DependentUpon>StatementDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card\StatementDownload.aspx.designer.cs">
+      <DependentUpon>StatementDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestBobibanking.aspx.cs">
+      <DependentUpon>TestBobibanking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestBobibanking.aspx.designer.cs">
+      <DependentUpon>TestBobibanking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagment\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\ProfileOLD.aspx.cs">
+      <DependentUpon>ProfileOLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagment\ProfileOLD.aspx.designer.cs">
+      <DependentUpon>ProfileOLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagment\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagment\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardHolder.BAL\CardHolder.BAL.csproj">
+      <Project>{6BDFACBF-3042-4E11-870C-4B4AA268F587}</Project>
+      <Name>CardHolder.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardHolder.DTO\CardHolder.DTO.csproj">
+      <Project>{C688E9E7-9EB9-4BF1-85F3-4EA23E417A32}</Project>
+      <Name>CardHolder.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardHolder.Utility\CardHolder.Utility.csproj">
+      <Project>{4DB21A18-0C4A-4AF4-B3AE-F2B30261509D}</Project>
+      <Name>CardHolder.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="assets\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="assets\bootstrap\scss\bootstrap.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="assets\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="assets\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="assets\bootstrap\scss\_alert.scss" />
+    <Content Include="assets\bootstrap\scss\_badge.scss" />
+    <Content Include="assets\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="assets\bootstrap\scss\_button-group.scss" />
+    <Content Include="assets\bootstrap\scss\_buttons.scss" />
+    <Content Include="assets\bootstrap\scss\_card.scss" />
+    <Content Include="assets\bootstrap\scss\_carousel.scss" />
+    <Content Include="assets\bootstrap\scss\_close.scss" />
+    <Content Include="assets\bootstrap\scss\_code.scss" />
+    <Content Include="assets\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="assets\bootstrap\scss\_dropdown.scss" />
+    <Content Include="assets\bootstrap\scss\_forms.scss" />
+    <Content Include="assets\bootstrap\scss\_functions.scss" />
+    <Content Include="assets\bootstrap\scss\_grid.scss" />
+    <Content Include="assets\bootstrap\scss\_images.scss" />
+    <Content Include="assets\bootstrap\scss\_input-group.scss" />
+    <Content Include="assets\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="assets\bootstrap\scss\_list-group.scss" />
+    <Content Include="assets\bootstrap\scss\_media.scss" />
+    <Content Include="assets\bootstrap\scss\_mixins.scss" />
+    <Content Include="assets\bootstrap\scss\_modal.scss" />
+    <Content Include="assets\bootstrap\scss\_nav.scss" />
+    <Content Include="assets\bootstrap\scss\_navbar.scss" />
+    <Content Include="assets\bootstrap\scss\_pagination.scss" />
+    <Content Include="assets\bootstrap\scss\_popover.scss" />
+    <Content Include="assets\bootstrap\scss\_print.scss" />
+    <Content Include="assets\bootstrap\scss\_progress.scss" />
+    <Content Include="assets\bootstrap\scss\_reboot.scss" />
+    <Content Include="assets\bootstrap\scss\_root.scss" />
+    <Content Include="assets\bootstrap\scss\_tables.scss" />
+    <Content Include="assets\bootstrap\scss\_tooltip.scss" />
+    <Content Include="assets\bootstrap\scss\_transitions.scss" />
+    <Content Include="assets\bootstrap\scss\_type.scss" />
+    <Content Include="assets\bootstrap\scss\_utilities.scss" />
+    <Content Include="assets\bootstrap\scss\_variables.scss" />
+    <Content Include="assets\scripts\bootstrap.min.js.map" />
+    <Content Include="assets\scss\abstracts\_functions.scss" />
+    <Content Include="assets\scss\abstracts\_mixins.scss" />
+    <Content Include="assets\scss\abstracts\_variables.scss" />
+    <Content Include="assets\scss\bob.css.map" />
+    <Content Include="assets\scss\bob.scss" />
+    <Content Include="assets\scss\components\_buttons.scss" />
+    <Content Include="assets\scss\components\_common.scss" />
+    <Content Include="assets\scss\fonts\slick.eot" />
+    <Content Include="assets\scss\fonts\slick.ttf" />
+    <Content Include="assets\scss\fonts\slick.woff" />
+    <Content Include="assets\scss\hamburger\_3dx.scss" />
+    <Content Include="assets\scss\hamburger\_base.scss" />
+    <Content Include="assets\scss\hamburger\_hamburgers.scss" />
+    <Content Include="assets\scss\layout\_footer.scss" />
+    <Content Include="assets\scss\layout\_header.scss" />
+    <Content Include="assets\scss\layout\_navigation.scss" />
+    <Content Include="assets\scss\pages\_dashboard.scss" />
+    <Content Include="assets\scss\pages\_request.scss" />
+    <Content Include="assets\scss\pages\_statements.scss" />
+    <Content Include="assets\scss\vendor\_nice-select.scss" />
+    <Content Include="assets\scss\fonts\rubik-v8-latin-regular.eot" />
+    <Content Include="assets\scss\fonts\rubik-v8-latin-regular.ttf" />
+    <Content Include="assets\scss\fonts\rubik-v8-latin-regular.woff" />
+    <Content Include="assets\scss\fonts\rubik-v8-latin-regular.woff2" />
+    <Content Include="assets\scss\pages\_login.scss" />
+    <Content Include="assets\scss\pages\_payments.scss" />
+    <Content Include="assets\scss\pages\_request-status.scss" />
+    <None Include="BOB.KEY" />
+    <Content Include="fonts\aurulentsans-regular-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\aurulentsans-regular-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\aurulentsans-regular-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Simaple.Master" />
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\CardHolderPublishProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="RequestSite.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>57685</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57686/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RequestSite.Master.cs" Inherits="CardHolder.RequestSite" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- project style -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <asp:PlaceHolder ID="phJavaScripts" runat="server"></asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--[if IE]>
+<script type="text/javascript" src="javascript/PIE.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+ if ($("#hdnBack").val() != "") {
+            location.href = "/ErrorPage/CodeError.aspx";
+             return false;
+        }
+           });
+
+            </script>
+	
+       
+	</script>
+<![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (window.history && history.pushState) { // check for history api support
+                
+                window.addEventListener('load', function () {
+                    // create history states
+                    history.pushState(-1, null); // back state
+                    history.pushState(0, null); // main state
+                    history.pushState(1, null); // forward state
+                    history.go(-1); // start in main state
+                    this.addEventListener('popstate', function (event, state) {
+                        // check history state and fire custom events
+                        if (state = event.state) {                            
+                            event = document.createEvent('Event');
+                            event.initEvent(state > 0 ? 'next' : 'previous', true, true);
+                            this.dispatchEvent(event);
+                            // reset state
+                            location.href = "/ErrorPage/CodeError.aspx";
+                            return false;
+                            //history.go(-state);
+                        }
+                    }, false);
+                }, false);
+            }
+           
+        });
+        $(window).load(function () {
+            $("#hdnBack").val("hello");
+        });
+
+        $(function () {
+            $(this).bind("contextmenu", function (e) {
+                e.preventDefault();
+            });
+
+            //            $('body').mousedown(function (e) {
+            //                if (e.button == 1) {
+            //                    alert("Middle click disabled");
+            //                    return false
+            //                }
+            //            });
+        }); 
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            if (window.PIE) {
+                jQuery('.shadow').each(function () {
+                    PIE.attach(this);
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript" language="javascript">
+
+        function OfflineOverrideBody() {
+            if (!navigator.onLine && document.body != null) {
+                document.body.innerHTML = "Your browser is running in offline mode. Please refresh your browser and log in again.";
+            }
+            setTimeout(OfflineOverrideBody, 100);
+        }
+        OfflineOverrideBody();
+
+        function disableBackButton() {
+            window.history.forward();
+        }
+        setTimeout("disableBackButton()", 0);
+
+        function setPannel(objpnlV, objchkissub) {
+            $('.accordion-headLinks').removeClass('active');
+            $('.accordion-head').removeClass('active');
+
+            if (objchkissub == "0")
+                $('#dv' + objpnlV).addClass('active');
+            else if (objchkissub == "1") {
+                $('#dvServiceRequestprnt').addClass('active').next().slideDown();
+                $('#hlnk' + objpnlV).addClass('ancractive');
+
+            }
+
+            return false;
+        }
+        function checkCurrentPath(objvalue) {
+            var hv = $('input[id$=hdnCurrentURIPath]').val();
+            if (objvalue == hv) {
+               
+                return false;
+            }
+            else {
+               
+                return true;
+            }
+        }
+    </script>
+    <link rel="Shortcut Icon" href="images/favicon.ico" />
+</head>
+<body onload="disableBackButton();">
+<noscript class="noscriptDiv">
+<div id="scriptOffMsg">This application uses Javascript. Your browser either doesn't support Javascript or you have it turned off.<br/>
+Some of the functionalities will not work if javascript off. To see this application as it is meant to appear please use a Javascript enabled browser.<br />
+Please refresh page after turning Javascript on.
+</div>
+</noscript>
+    <input id="hdnBack" type="hidden" value="" />
+    <form id="form1" autocomplete="off" runat="server">
+    <div id="wrapper" class="clearfix">
+        <!--SITE HEDAER-->
+        <header class="site-header">
+            <div class="container-fluid">
+                <div class="row  align-items-center d-lg-none">
+                    <div class="col-auto">
+                        <div id="sidebarCollapse" class="hamburger hamburger--3dx">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                            <div class="menu-text">Menu</div>
+                            <div class="close-text">Close</div>
+                        </div>                        
+                    </div>
+                    <div class="col text-center">
+                        <a class="brand" href="#">
+                            <img src="<%= this.Page.GetNewImagePath("BOB_Logo.png") %>" alt="bank of baroda logo" />
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a id="chat-btn" class="btn btn-link text-uppercase">
+                            <figure class="mb-0">
+                                <img src="<%= this.Page.GetNewImagePath("Chat.png") %>" alt="chat-icon" height="25" />
+                            </figure>
+                            <span>Chat</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row  align-items-center d-lg-flex d-none">
+                    <div class="col-sm-6 col-5">
+                        <a class="brand" href="#">
+                            <img src="<%= this.Page.GetNewImagePath("BOB_Logo.png") %>" alt="bank of baroda logo" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-7 text-right">
+                        <ul class="nav secondary-menus justify-content-end" id="divTopLinks" runat="server">
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="" title="About Us">Help/FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="" title="About Us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="" title="Contact Us">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="lnkLogOut_Click" CausesValidation="false" CssClass="nav-link">Sign Out</asp:LinkButton>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="site-sub-header d-lg-none d-block mb-4">
+            <div class="container-fluid">
+                <h1 class="title">
+                    Hello, Rajwardhan Kapoor
+                </h1>
+            </div>            
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6 d-lg-block d-none">
+                        <h1 class="title">
+                            Hello, 
+                            <asp:Label ID="lblFullName" runat="server"></asp:Label>
+                            <%--<asp:Label CssClass="logDate" ID="lblLastLoginDateTime" runat="server"></asp:Label>--%>
+                        </h1>
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                            <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <asp:HyperLink ID="HyperLink7" runat="server" onclick="return checkCurrentPath('ACCOUNTSUMMARY.ASPX');"
+                                    NavigateUrl="~/AccountSummary/AccountSummary.aspx"  CssClass="nav-link"> Dashboard <span class="sr-only">(current)</span></asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink8" runat="server" onclick="return checkCurrentPath('CARDSTATEMENT.ASPX');"
+                                    NavigateUrl="~/Card/CardStatement.aspx"   CssClass="nav-link"> Statements</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item d-lg-block d-none">
+                                        <asp:HyperLink ID="hlnkATM_PIN_REGENERATION" runat="server" onclick="return checkCurrentPath('ATM_PIN_Regeneration.aspx');"
+                                    NavigateUrl="~/ServiceRequest/ATM_PIN_Regeneration.aspx"   CssClass="nav-link"> Requests</asp:HyperLink> 
+                                    </li>
+                                   
+                                    <li class="nav-item dropdown d-lg-none d-block">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Requests
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Card Requests</a>
+                                            <a class="dropdown-item" href="#">Auto Debit Payment Requests</a>
+                                            <a class="dropdown-item" href="#">Bonus Point Redemption</a>
+                                            <a class="dropdown-item" href="#">Balance Transfer Request</a>
+                                            <a class="dropdown-item" href="#">EMI Request</a>
+                                            <a class="dropdown-item" href="#">Loan Request</a>
+                                            <a class="dropdown-item" href="#">Insurance/Dispatch details of card</a>
+                                            <a class="dropdown-item" href="#">Other Request/Complaints</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink1" runat="server" onclick="return checkCurrentPath('PROFILE.ASPX');"
+                                    NavigateUrl="~/UserManagment/Profile.aspx" CssClass="nav-link">My Profile</asp:HyperLink>
+                                    </li>
+
+                                    <div class="dropdown-divider"></div>
+                                    <li class="nav-item d-lg-none d-block">
+                                        <a class="nav-link" target="_blank" href="" title="About Us">Help/FAQ</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none d-block">
+                                        <a class="nav-link" target="_blank" href="https://www.bobcards.in/about-us.htm" title="About Us">About Us</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none d-block">
+                                        <a class="nav-link" target="_blank" href="https://www.bobcards.in/contact-us.htm" title="Contact Us">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none d-block">
+                                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="lnkLogOut_Click" CausesValidation="false" CssClass="nav-link">Sign Out</asp:LinkButton>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Dark Overlay element -->
+        <div class="overlay"></div>
+       <div class="colmask leftmenu">
+            <div runat="server" id="divmarq" class="divmarquee">
+                <h6>
+                    <asp:Literal ID="litMarquee" runat="server"></asp:Literal></h6>
+            </div>
+            <div class="">
+                <div class="">
+                    <!-- =============== right content section ================ -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder11" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="">
+                    <!-- =============== left navigation ============== -->
+                    <div id="leftMenu" class="shadow">
+                        <asp:HiddenField runat="server" ID="hdnCurrentURIPath" />                        
+                        <div class="accordion-box clearBoth">
+                            <div class="accordion-head MenuLi6" id="dvServiceRequestprnt">
+                                <span>Service Request</span><em></em></div>
+                            <div class="accordion-contant clearfix allHelpText" style="display: none;">
+                                <asp:HiddenField runat="server" ID="hdnsublinks" Value="ATM_PIN_REGENERATION,STATEMENTREQUEST,PRESERVESTATEMENTREQUEST,CREDITCARDREPLACEMENTRENEWAL,REQUESTADDONCARDPAGE,DEREGISTERCREDITCARD,AUTODEBITPAYMENTTYPE,AUTODEBITDE_REGISTRATION,BONUSPOINTREDEMPTION,BLOCKINGCARD,BALANCETRANSFERREQUEST,EMIREQUEST,LOANREQUEST,ISSUANCE_DISPATCH_DTL_CARDPIN,OTHERREQUEST_COMPLAINT,REQUEST_COMPLAINTSTATUS" />
+                                <p class="accountProfile">
+                                    <%--<asp:HyperLink ID="hlnkATM_PIN_REGENERATION" runat="server" onclick="return checkCurrentPath('ATM_PIN_REGENERATION.ASPX');"> 
+                                        <span>PIN Reset Request</span> <img src='<%= this.Page.GetImagePath("new.gif") %>' height="20" /></asp:HyperLink>--%> 
+                                    <asp:HyperLink ID="hlnkSTATEMENTREQUEST" runat="server" onclick="return checkCurrentPath('STATEMENTREQUEST.ASPX');"><span>Statement Delivery Mode</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkPRESERVESTATEMENTREQUEST" runat="server" onclick="return checkCurrentPath('PRESERVESTATEMENTREQUEST.ASPX');"><span>Preserved statement Request</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkCREDITCARDREPLACEMENTRENEWAL" runat="server" onclick="return checkCurrentPath('CREDITCARDREPLACEMENTRENEWAL.ASPX');"
+                                        NavigateUrl="~/ServiceRequest/CreditCardReplacementRenewal.aspx?replacementid=3&renewalid=16"> <span>Card Replacement/Renewal</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkREQUESTADDONCARDPAGE" runat="server" onclick="return checkCurrentPath('REQUESTADDONCARDPAGE.ASPX');"> <span>Request for Add On Card</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkDEREGISTERCREDITCARD" runat="server" onclick="return checkCurrentPath('DEREGISTERCREDITCARD.ASPX');"><span>De-Registration of Card</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkAUTODEBITPAYMENTTYPE" runat="server" onclick="return checkCurrentPath('AUTODEBITPAYMENTTYPE.ASPX');"><span>Auto Debit Payment Type</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkAUTODEBITDE_REGISTRATION" runat="server" onclick="return checkCurrentPath('AUTODEBITDE_REGISTRATION.ASPX');"> <span>Auto Debit De-Registration</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkBONUSPOINTREDEMPTION" runat="server" onclick="return checkCurrentPath('BONUSPOINTREDEMPTION.ASPX');"><span>Bonus Point Redemption</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkBLOCKINGCARD" runat="server" onclick="return checkCurrentPath('BlockingCard.aspx');"><span>Blocking of Card</span> <img src='<%= this.Page.GetImagePath("new.gif") %>' height="20" /></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkBALANCETRANSFERREQUEST" runat="server"><span>Balance Transfer Request</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkEMIREQUEST" runat="server" onclick="return checkCurrentPath('EMIRequest.aspx');" > <span>EMI Request</span></asp:HyperLink>
+                                     <asp:HyperLink ID="hlnkLOANREQUEST" runat="server" > <span>Loan Request</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkISSUANCE_DISPATCH_DTL_CARDPIN" runat="server" onclick="return checkCurrentPath('ISSUANCE_DISPATCH_DTL_CARDPIN.ASPX');"
+                                        NavigateUrl="~/ServiceRequest/Issuance_Dispatch_Dtl_CardPin.aspx"> <span>Issuance/Dispatch Details of Card/PIN</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkOTHERREQUEST_COMPLAINT" runat="server" onclick="return checkCurrentPath('OTHERREQUEST_COMPLAINT.ASPX');"
+                                        NavigateUrl="~/ServiceRequest/OtherRequest_Complaint.aspx"> <span>Other Request/Complaint</span></asp:HyperLink>
+                                    <asp:HyperLink ID="hlnkREQUEST_COMPLAINTSTATUS" runat="server" onclick="return checkCurrentPath('REQUEST_COMPLAINTSTATUS.ASPX');"
+                                        NavigateUrl="~/ServiceRequest/Request_ComplaintStatus.aspx"> <span>Request/Complaint Status</span></asp:HyperLink>
+                                    <%--Commented for this release on 28_03_2019--%>
+                                    <asp:HyperLink ID="hlnkInternationalLimitOpenClose" runat="server" onclick="return checkCurrentPath('InternationlLimitOpenClose.aspx');">
+                                        <span>International Limit Open/Close</span><img src='<%= this.Page.GetImagePath("new.gif") %>' height="20" /></asp:HyperLink>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-box clearBoth">
+                            <div class="accordion-headLinks MenuLi7" id="dvSPENDANALYSER">
+                                <asp:HyperLink ID="hlnkSpendAnalyser" runat="server" onclick="return checkCurrentPath('SPENDANALYSER.ASPX');"
+                                    NavigateUrl="~/SpendAnalyser.aspx"> <span>Spend Analyser</span></asp:HyperLink>
+                            </div>
+                        </div>
+                        <div class="accordion-box clearBoth">
+                            <div class="accordion-headLinks" id="dvINTERESTCALCULATOR">
+                                <asp:HyperLink ID="hlnkInterestCalc" runat="server" onclick="return checkCurrentPath('INTERESTCALCULATOR.ASPX');"
+                                    NavigateUrl="~/InterestCalculator.aspx"> <span>Interest Calculator</span></asp:HyperLink>
+                            </div>
+                        </div>
+                        <%-- <div class="accordion-box clearBoth">
+                            <div class="accordion-headLinks">
+                                <a href="#" title="Offer for you"><span>Offer for you</span></a></div>
+                        </div>
+                        <div class="accordion-box clearBoth">
+                            <div class="accordion-headLinks" id="dvCHANGEPASSWORD">
+                                <a runat="server" onclick="return checkCurrentPath('CHANGEPASSWORD.ASPX');" href="~/UserManagment/ChangePassword.aspx"
+                                    title="Modify Password"><span>Modify Password</span></a></div>
+                        </div>
+                        <%--   <div class="accordion-box clearBoth">
+                            <div class="accordion-headLinks">
+                                <a href="#" title="Important links"><span>Important links</span></a></div>
+                        </div>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>

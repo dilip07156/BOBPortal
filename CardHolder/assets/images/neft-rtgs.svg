@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="28px" viewBox="0 0 39 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Payments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="BOB---Web-UI---Payments---Insta-Payment-Step-2" transform="translate(-85.000000, -634.000000)" stroke-width="1.5">
+            <g id="Group-2" transform="translate(85.000000, 634.000000)">
+                <g id="Group-916" transform="translate(16.440000, 14.500000) scale(-1, 1) translate(-16.440000, -14.500000) translate(0.440000, 0.000000)" stroke="#3E5996">
+                    <path d="M4.439472,2.28947368 C4.744992,1.36757895 5.596192,0.763157895 6.599392,0.763157895 L29.399392,0.763157895 C30.659472,0.763157895 31.679392,1.84836842 31.679392,3.18694737 L31.679392,21.2341053 C31.679392,22.5726842 30.659472,23.6578947 29.399392,23.6578947 L16.479392,23.6578947" id="Stroke-8437"></path>
+                    <path d="M11.16,26.7105263 L24.84,26.7105263" id="Stroke-8438"></path>
+                    <path d="M18,23.6578947 L18,26.7105263" id="Stroke-8439"></path>
+                    <path d="M16.48,17.5526316 L31.68,17.5526316" id="Stroke-8440"></path>
+                    <path d="M14.19848,18.3157895 L14.19924,22.2163743 C14.19924,23.4289474 13.17324,24.4210526 11.91924,24.4210526 L2.79924,24.4210526 C1.54524,24.4210526 0.51924,23.4289474 0.51924,22.2163743 L0.51924,6.78362573 C0.51924,5.57105263 1.54524,4.57894737 2.79924,4.57894737 L11.91924,4.57894737 C13.17324,4.57894737 14.19924,5.57105263 14.19924,6.78362573 L14.19848,12.2105263" id="Stroke-8443" transform="translate(7.359240, 14.500000) rotate(-180.000000) translate(-7.359240, -14.500000) "></path>
+                    <path d="M0.51924,19.8421053 L14.19924,19.8421053" id="Stroke-8444"></path>
+                    <path d="M0.51924,9.15789474 L14.19924,9.15789474" id="Stroke-8445"></path>
+                </g>
+                <path d="M27.36,13.7368421 L38,13.7368421" id="Path-2" stroke="#DF5435"></path>
+                <polyline id="Path-3" stroke="#DF5435" points="34.96 10.6842105 38 13.7368421 34.96 16.7894737"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,39 @@
+2019-09-19 13:15:20.4183 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 13:15:20.5520 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 14:26:58.6973 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <abc@yahoo.com>: Relay access denied
+2019-09-19 14:26:58.7360 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Merge production issue with new design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-19 14:26:58.7360 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-09-19 15:35:02.1935 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-09-19 15:35:02.2623 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Merge production issue with new design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-19 15:35:02.2623 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-09-19 15:57:00.6724 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-09-19 15:57:00.6774 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Merge production issue with new design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-19 15:57:00.6774 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-09-19 15:57:05.2228 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 15:57:05.3006 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 15:57:09.1126 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 15:57:09.1940 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 15:57:16.9298 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-09-19 15:57:16.9298 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Merge production issue with new design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-19 15:57:16.9298 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-09-19 15:57:20.5683 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 16:25:35.2192 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <amit_a_gupta@yahoo.co.in>: Relay access denied
+2019-09-19 16:25:35.2252 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Merge production issue with new design\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-19 16:25:35.2252 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-09-19 17:48:26.3405 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-19 17:48:26.4432 CardHolderOracle.DAL.common ORA-00942: table or view does not exist

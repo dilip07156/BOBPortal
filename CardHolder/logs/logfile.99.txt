@@ -1,0 +1,4 @@
+2019-09-23 15:22:40.2785 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-23 15:22:41.0406 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-23 15:37:16.2112 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-23 15:37:16.9391 CardHolderOracle.DAL.common ORA-00942: table or view does not exist

@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>layout</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- project style -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/scss/bob.css" rel="stylesheet" />
+    <link href="assets/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="assets/slick-slider/slick.css" rel="stylesheet" />
+    <link href="assets/slick-slider/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ============ header section ================ -->
+        <header class="site-header">
+            <div class="container-fluid">
+                <div class="row  align-items-center d-lg-none">
+                    <div class="col-auto">
+                        <div id="sidebarCollapse" class="hamburger hamburger--3dx">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                            <div class="menu-text">Menu</div>
+                            <div class="close-text">Close</div>
+                        </div>                        
+                    </div>
+                    <div class="col text-center">
+                        <a class="brand" href="#">
+                            <img src="assets/images/BOB_Logo.png" alt="bank of baroda logo" />
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a id="cahtBtn" class="btn btn-link text-uppercase">
+                            <i class="far fa-comment-alt fa-lg"></i>
+                            <span>Chat</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row  align-items-center d-lg-flex d-none">
+                    <div class="col-sm-6 col-5">
+                        <a class="brand" href="#">
+                            <img src="assets/images/BOB_Logo.png" alt="bank of baroda logo" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-7 text-right">
+                        <ul class="nav secondary-menus justify-content-end" id="divTopLinks" runat="server">
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="" title="About Us">Help/FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="" title="About Us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="" title="Contact Us">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign Out</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                <div class="col-md-6 d-lg-block d-none"><h1 class="title">Hello, Rajvardhan Kapoor</h1></div>
+                <div class="col-md-6 p-0">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Requests
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Card Requests</a>
+                                <a class="dropdown-item" href="#">Auto Debit Payment Requests</a>
+                                <a class="dropdown-item" href="#">Bonus Point Redemption</a>
+                                <a class="dropdown-item" href="#">Balance Transfer Request</a>
+                                <a class="dropdown-item" href="#">EMI Request</a>
+                                <a class="dropdown-item" href="#">Loan Request</a>
+                                <a class="dropdown-item" href="#">Insurance/Dispatch details of card</a>
+                                <a class="dropdown-item" href="#">Other Request/Complaints</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Statements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Profile</a>
+                        </li>
+
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" target="_blank" href="" title="About Us">Help/FAQ</a>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" target="_blank" href="" title="About Us">About Us</a>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" target="_blank" href="" title="Contact Us">Contact Us</a>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" href="#">Sign Out</a>
+                        </li> 
+
+                        
+
+                        <!--secondary menu-->
+                        
+                                          
+                        
+                    </ul>
+                </div>
+            </nav>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <!-- Dark Overlay element -->
+        <div class="overlay"></div>
+
+        
+
+        <div class="container-fluid">            
+            <div class="row masonry masonry--v">
+                <!--CARD SUMMARY-->
+                <div class="col-md-6 mb-4 masonry-brick masonry-brick--v">
+                    <div class="row  align-items-center mb-2">
+                        <div class="col-auto mr-auto"><h2 class="sub-title">Card Summary</h2></div>
+                        <div class="col-auto"><span class="text-primary title-date">As on : <strong>01 Mar 2019</strong></span></div>
+                    </div>                
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-7 form-group">
+                                    <select class="form-control form-control-lg custom-select">
+                                        <option>XXXX-XXXX-XXXX-7867</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-5 order-lg-2 order-3 upgrad-card-btn mb-lg-3 mb-0">
+                                    <button type="button" class="btn btn-outline-primary text-uppercase btn-lg btn-block">Upgrade card</button>
+                                </div>
+                                <div class="col order-sm-2">
+                                    <!--Credit limit-->
+                            <section>
+                                <h6 class="font-normal">
+                                    Credit Limit: <i class="fas fa-rupee-sign small-icon"></i> 
+                                    <span class="font-weight-semi-bold">3,00,000</span>
+                                </h6>
+                                <div class="row mb-1">
+                                    <div class="col-auto mr-auto text-primary">
+                                        <div><small>Used</small></div>
+                                        <div><i class="fas fa-rupee-sign small-icon"></i> 45,887 </div>
+                                    </div>
+                                    <div class="col-auto text-right">
+                                        <div><small>Available</small></div>
+                                        <div><i class="fas fa-rupee-sign small-icon"></i> 2,54,113 </div>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4" style="height: 8px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </section>
+
+                            <!--Cash limit-->
+                            <section>
+                                <h6 class="font-normal">
+                                    Cash Limit: <i class="fas fa-rupee-sign small-icon"></i> 
+                                    <span class="font-weight-semi-bold">1,50,000</span>
+                                </h6>
+                                <div class="row mb-1">
+                                    <div class="col-auto mr-auto text-primary">
+                                        <div><small>Used</small></div>
+                                        <div><i class="fas fa-rupee-sign small-icon"></i> 45,887 </div>
+                                    </div>
+                                    <div class="col-auto text-right">
+                                        <div><small>Available</small></div>
+                                        <div><i class="fas fa-rupee-sign small-icon"></i> 1,04,113 </div>
+                                    </div>
+                                </div>
+                                <div class="progress mb-4" style="height: 8px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </section>
+
+                            <div class="row mobile-label">
+                                <div class="col-auto mr-auto  align-items-center">
+                                    <figure class="icon">
+                                        <img src="assets/images/crown.png" alt="crown-icon" />
+                                    </figure>
+                                    <span>Total points earned</span></div>
+                                <div class="col-auto"><span class="font-weight-semi-bold">800 points</span></div>
+                            </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!--BILLING SUMMARY-->
+                <div class="col-md-6 order-md-5 mb-4 masonry-brick masonry-brick--v billing-summary">
+                    <div class="row  align-items-center mb-2">
+                        <div class="col-auto mr-auto"><h2 class="sub-title">Billing Summary</h2></div>
+                        <div class="col-auto"><span class="text-primary title-date">As on : <strong>01 Mar 2019</strong></span></div>
+                    </div>                
+                    
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="row mb-lg-1 mb-3">
+                                <div class="col-auto mr-auto">Total amount due: 
+                                    <figure class="icon info">
+                                        <img src="assets/images/info.png" alt="info-icon"/>
+                                    </figure>
+                                </div>
+                                <div class="col-auto"><span class="h4"> <i class="fas fa-rupee-sign medium-icon"></i>  8000000.87</span></div>
+                            </div>
+                            <div class="row mb-lg-1 mb-3">
+                                <div class="col-auto mr-auto">Minimum amount due: 
+                                    <figure class="icon info">
+                                        <img src="assets/images/info.png" alt="info-icon"/>
+                                    </figure>
+                                </div>
+                                <div class="col-auto"><span class="h5"><i class="fas fa-rupee-sign medium-icon"></i> 250.00</span></div>
+                            </div>
+                            <hr />
+                            <div class="row mb-lg-1 mb-3">
+                                <div class="col-auto mr-auto">Due date:</div>
+                                <div class="col-auto"><span>25 Mar 2019</span></div>
+                            </div>
+                            <div class="row mb-lg-1 mb-3">
+                                <div class="col-auto mr-auto">Generated on:</div>
+                                <div class="col-auto"><span>01 Mar 2019</span></div>
+                            </div>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-primary btn-lg text-uppercase pay-now-btn" role="button" aria-pressed="true">Pay now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--UNBILLED AMOUNT-->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto mr-auto">Unbilled amount: 
+                                    <figure class="icon  info">
+                                        <img src="assets/images/info.png" alt="info-icon"/>
+                                    </figure>
+                                </div>
+                                <div class="col-auto"><span class="h5"><i class="fas fa-rupee-sign medium-icon"></i>  25,098.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card grey-card">
+                        <div class="card-body">
+                            <div class="row mb-1">
+                                <div class="col-auto mr-auto">Last Bill:</div>
+                                <div class="col-auto"><span class="h5"> <i class="fas fa-rupee-sign medium-icon"></i> 1,00,000</span></div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col-auto mr-auto">Bill date: </div>
+                                <div class="col-auto"><span>01 Mar 2019</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto mr-auto"><a href="" class="primary-link"><u>View Statement</u></a> </div>
+                                <div class="col-auto"> 
+                                    <figure class="icon mr-2">
+                                        <img src="assets/images/check.png" alt="info-icon" width="20"/>
+                                    </figure>
+                                    <span class="font-weight-semi-bold text-muted">PAID</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--QUICK TASK-->
+                <div class="col-md-6 order-md-2 mb-4 masonry-brick masonry-brick--v">
+                    <h2 class="sub-title mb-2">Quick Task</h2>
+                    <div class="row quick-tasks">
+                        <div class="col-lg-4 col-md-12">
+                            <a href="">
+                                <div class="card mb-2">                                    
+                                    <div class="card-body">
+                                        <div>
+                                            <figure class="icon">
+                                            <img src="assets/images/pin.png" alt="pin-icon" />
+                                        </figure>
+                                        <span>Pin Generation</span>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <a href="">
+                                <div class="card mb-2">                                    
+                                    <div class="card-body">
+                                        <div>
+                                            <figure class="icon">
+                                            <img src="assets/images/card.png" alt="card-icon" />
+                                        </figure>
+                                        <span>Block Your Card</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <a href="">
+                                <div class="card mb-2">                                    
+                                    <div class="card-body">
+                                        <div>
+                                            <figure class="icon">
+                                            <img src="assets/images/inr-manage.png" alt="inr-manage-icon" />
+                                        </figure>
+                                        <span>Manage International Limit</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                   
+
+                        
+                    </div>
+                </div>
+
+                              
+                <!--SERVICE REQUEST STATUS-->
+                <div class="col-md-6 order-md-4 mb-4 masonry-brick masonry-brick--v service-request">
+                    <div class="row  align-items-center mb-2">
+                        <div class="col-auto mr-auto"><h2 class="sub-title">Service Request Status</h2></div>
+                        <div class="col-auto"><a href="" class="primary-link"><small><u>View Details</u></small></a></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <a href="">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-11 col-10">
+                                                <div class="row">
+                                                    <div class="col-auto mr-auto mobile-label">Compliant Number: <strong>1245677</strong></div>
+                                                    <div class="col-auto">
+                                                        <figure class="icon mr-2">
+                                                            <img src="assets/images/check.png" alt="info-icon" width="20" />
+                                                        </figure>
+                                                        <span class="font-weight-semi-bold text-muted">RESOLVED</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-1 col-2 text-right">
+                                                <i class="fas fa-chevron-right orange"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <a href="">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-11 col-10">
+                                                <div class="row">
+                                                    <div class="col-auto mr-auto mobile-label">Compliant Number: <strong>1245677</strong></div>
+                                                    <div class="col-auto">
+                                                        <figure class="icon mr-2">
+                                                            <img src="assets/images/refresh.png" alt="refresh-icon" width="25" />
+                                                        </figure>
+                                                        <span class="font-weight-semi-bold text-muted">PENDING</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-1 col-2 text-right">
+                                                <i class="fas fa-chevron-right orange"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                               
+                <!--RECENT TRANSACTIONS-->
+                <div class="col-md-6 order-md-5 mb-4 masonry-brick masonry-brick--v">
+                    <div class="row  align-items-center mb-2">
+                        <div class="col-auto mr-auto"><h2 class="sub-title">Recent Transactions</h2></div>
+                        <div class="col-auto"><a href="" class="primary-link"><small><u>View All</u></small></a></div>
+                    </div>                
+                    
+                    <ul class="list-group transaction-list">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    Starbucks Juhu
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    <span class="location-name">Nature's Basket online Services</span>
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,113 </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    Starbucks Juhu
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    Starbucks Juhu
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    Starbucks Juhu
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    Starbucks Juhu
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-7"> 
+                                    Starbucks Juhu
+                                    <div><small class="date text-muted">09 Feb 12:08</small></div>
+                                </div>
+                                <div class="col-5 text-right"><i class="fas fa-rupee-sign small-icon"></i> 1,04,1134 </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!--REWARD POINTS-->
+                <div class="col-md-6 order-md-3 mb-4 masonry-brick masonry-brick--v reward-point">
+                    <div class="row  align-items-center mb-2">
+                        <div class="col-auto mr-auto"><h2 class="sub-title">Reward Points</h2></div>
+                        <div class="col-auto"><a href="" class="primary-link"><small><u>View Details</u></small></a></div>
+                    </div>
+                    
+                    <div class="card mb-2 brand-gradient text-white">
+                        <div class="card-body">
+                            <div class="row  align-items-center">
+                                <div class="col-lg-7 mb-lg-0 mb-3 mr-auto text-lg-left text-center">
+                                    <h5>800 Points as on 01 Mar 2019</h5>                                    
+                                    <h6 class="font-normal">120 points expiring on 24<sup>th</sup> March 2019</h6>                                    
+                                </div>
+                                <div class="col-lg-5 text-center">
+                                    <button type="button" class="btn btn-outline-primary text-uppercase btn-lg">Redeem Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                             
+
+
+            </div>
+
+            <!--PROMOTIONS-->
+            <div class="row mb-4">                
+                <div class="col">
+                    <h2 class="sub-title mb-2">Promotions</h2>
+                    
+                    <div class="promotions row">
+                        <div class="col">
+                            <a href="">
+                                <div class="card">
+                                    <img src="assets/images/Promotiongraphic.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <span>Explore <i class="fas fa-chevron-right orange"></i></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="col">
+                            <a href="">
+                                <div class="card">
+                                    <img src="assets/images/Promotiongraphic.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <span>Explore <i class="fas fa-chevron-right orange"></i></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="col">
+                            <a href="">
+                                <div class="card">
+                                    <img src="assets/images/Promotiongraphic.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <span>Explore <i class="fas fa-chevron-right orange"></i></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </div>
+                        <div class="col">
+                            <a href="">
+                                <div class="card">
+                                    <img src="assets/images/Promotiongraphic.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <span>Explore <i class="fas fa-chevron-right orange"></i></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+    
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/slick-slider/slick.min.js"></script>
+    <!-- jQuery Custom Scroller -->
+    <script src="assets/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".transaction-list").mCustomScrollbar({
+                theme: "minimal-dark"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                // hide sidebar
+                $('#sidebar').removeClass('active');
+                // hide overlay
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                // open sidebar
+                $('#sidebar').toggleClass('active');
+                // fade in the overlay
+                $('.overlay').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+            // add mCustomScrollbar on mobile device
+            if ($(window).width() <= 992) {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal-dark"
+                });
+            }
+
+            // hamburger menu
+            var forEach = function (t, o, r) { if ("[object Object]" === Object.prototype.toString.call(t)) for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t); else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t) };
+
+            var hamburgers = document.querySelectorAll(".hamburger");
+            if (hamburgers.length > 0) {
+                forEach(hamburgers, function (hamburger) {
+                    hamburger.addEventListener("click", function () {
+                        this.classList.toggle("is-active");
+                    }, false);
+                });
+            }
+
+
+            //slick slider
+            $('.promotions').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 9999,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ]
+            });
+
+
+
+
+        });
+
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
+
+        
+    </script>
+
+</body>
+</html>

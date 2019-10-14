@@ -1,0 +1,30 @@
+2019-08-14 10:32:55.2913 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:33:04.8475 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:33:09.0621 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:33:12.7715 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:33:14.8749 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:33:31.2182 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:33:43.2871 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 10:49:52.0048 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 11:25:58.0661 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 11:26:09.7437 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 11:34:08.9240 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 11:34:30.1519 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 11:41:00.3049 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:10:25.8948 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:10:52.6185 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:11:19.7975 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:11:37.8490 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:15:13.7902 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:15:35.7520 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:18:46.1034 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:18:58.9856 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:19:04.6213 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:19:12.1149 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:23:28.3716 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:23:41.1779 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:28:36.5195 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:28:39.1287 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 13:40:34.1720 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 16:13:10.8827 CardHolderOracle.DAL.common Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-14 16:14:37.2968 CardHolderOracle.DAL.common Column 'BASIC_CARD_FLAG' does not belong to table Table.

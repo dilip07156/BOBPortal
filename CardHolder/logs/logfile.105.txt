@@ -1,0 +1,63 @@
+2019-10-04 10:44:13.4851 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 10:45:26.8752 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 10:49:36.0872 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 11:46:26.0018 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 11:47:39.5954 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 11:52:38.2442 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 11:55:54.1399 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 11:58:40.0474 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 12:02:24.3146 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 12:05:58.4038 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-10-04 12:30:24.9530 CardHolderOracle.DAL.common Error generated :  UnbilledTransactionsCount :ORA-2391: exceeded simultaneous SESSIONS_PER_USER limit
+2019-10-04 12:31:03.0375 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 12:40:06.1879 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 12:40:42.9927 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 12:42:31.1722 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 13:57:44.5199 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 13:58:28.5763 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:00:58.3615 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:08:45.2409 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:09:40.7062 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:16:25.3077 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:17:38.0538 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:30:55.3022 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:32:17.5945 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:32:26.6707 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:33:10.2841 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:33:29.2206 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:59:02.6959 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:59:23.2843 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 14:59:43.8764 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 15:17:21.8581 CardHolderOracle.DAL.common Error generated :  UnbilledTransactionsCount :ORA-28000: the account is locked
+2019-10-04 15:17:38.9179 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 15:18:25.3756 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 16:20:11.8859 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:{"RespCode":"204","CardNumber":"4624900000073121","TxnType":"IL","RespDesc":"Record not found"}
+2019-10-04 16:21:46.1930 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-10-04 16:36:42.9660 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-10-04 16:36:43.2963 CardHolderOracle.DAL.common ORA-02396: exceeded maximum idle time, please connect again
+2019-10-04 16:42:37.9720 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-10-04 16:53:46.8505 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 127433
+Session ID: 388 Serial number: 46367
+2019-10-04 16:54:22.9079 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 127433
+Session ID: 388 Serial number: 46367
+2019-10-04 16:54:33.1958 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 127433
+Session ID: 388 Serial number: 46367
+2019-10-04 16:54:47.8455 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 127433
+Session ID: 388 Serial number: 46367
+2019-10-04 16:55:44.2038 CardHolderOracle.DAL.common ORA-01012: not logged on
+Process ID: 127433
+Session ID: 388 Serial number: 46367
+2019-10-04 17:03:38.3115 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-10-04 17:19:20.1405 CardHolderOracle.DAL.common ORA-03113: end-of-file on communication channel
+Process ID: 132785
+Session ID: 773 Serial number: 43122
+2019-10-04 17:19:25.8151 CardHolderOracle.DAL.common ORA-03113: end-of-file on communication channel
+Process ID: 132759
+Session ID: 7 Serial number: 12121
+2019-10-04 17:22:15.1326 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}
+2019-10-04 17:38:51.1540 CardHolderOracle.DAL.common ORA-02396: exceeded maximum idle time, please connect again
+2019-10-04 17:38:52.4580 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:{"CardNumber":"","RespCode":"106","TxnType":"PC","RespDesc":"Unable to generate PIN offset"}

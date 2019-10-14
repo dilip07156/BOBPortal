@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="27px" viewBox="0 0 57 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Payments" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BOB---Web-UI---Payments---Insta-Payment-Step-2" transform="translate(-564.000000, -635.000000)">
+            <g id="Group-4" transform="translate(565.000000, 636.000000)">
+                <rect id="Rectangle" stroke="#3E5996" stroke-width="1.5" stroke-linejoin="round" x="0" y="0" width="55" height="25"></rect>
+                <g id="Group-3" transform="translate(10.000000, 8.000000)">
+                    <text id="B-i-l-l-D-e-s-k" font-family="OpenSans, Open Sans" font-size="7.92000029" font-weight="normal" letter-spacing="-0.660000041" fill="#DF5435">
+                        <tspan x="0" y="8">B i l l D e s </tspan>
+                        <tspan x="30.2981259" y="8">k</tspan>
+                    </text>
+                    <path d="M0,10.5600004 L34.7600013,10.5600004" id="Path-4" stroke="#DF5435" stroke-width="0.550000012"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

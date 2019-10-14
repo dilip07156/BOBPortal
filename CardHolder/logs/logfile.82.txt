@@ -1,0 +1,122 @@
+2019-08-13 10:54:31.8771 CardHolderOracle.DAL.common Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:54:38.2222 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:55:10.2414 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:55:12.6321 CardHolderOracle.DAL.common Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:55:12.8529 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:56:07.4695 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:56:07.6816 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:56:08.7125 CardHolderOracle.DAL.common Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:56:40.7199 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:56:53.5810 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 10:56:53.7486 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:37:32.3431 CardHolderOracle.DAL.common Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:38:03.6892 CardHolderOracle.DAL.common ORA-03113: end-of-file on communication channel
+Process ID: 190749
+Session ID: 394 Serial number: 40866
+2019-08-13 12:38:04.0923 CardHolderOracle.DAL.common Error generated :  CardList ORA-03113: end-of-file on communication channel
+Process ID: 190745
+Session ID: 13 Serial number: 551
+2019-08-13 12:38:04.1083 CardHolderOracle.DAL.common ORA-03113: end-of-file on communication channel
+Process ID: 190747
+Session ID: 199 Serial number: 21824
+2019-08-13 12:39:26.1799 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:39:30.6743 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:39:34.1442 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:39:39.1379 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:39:39.3458 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:40:40.3753 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:59:27.0626 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:59:32.2571 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 12:59:35.8146 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:01:19.8250 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:01:20.0347 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:01:21.7501 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:08:10.0464 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:08:15.2926 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:08:17.3914 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:11:09.0339 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:11:14.5667 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:11:22.5404 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:18:36.2402 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:18:41.1526 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:18:43.2507 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:21:06.7809 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:21:12.3409 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:21:15.7301 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:23:47.0322 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:23:51.1897 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:23:54.1579 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:26:58.7334 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:27:07.5328 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:27:10.9681 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:27:37.1426 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:28:14.6147 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:28:24.5142 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:29:09.9648 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:29:11.2079 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:29:12.3893 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:29:53.5640 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:29:53.7896 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 13:29:56.3002 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 14:48:44.0077 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-13 14:48:44.0416 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-08-13 15:40:44.2668 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-13 15:42:20.1068 CardHolder.ServiceRequest.ATM_PIN_Regeneration Jetty Server Response String:
+2019-08-13 15:50:02.6511 CardHolder.ServiceRequest.InternationlLimitOpenClose Jetty Server Response String:
+2019-08-13 16:31:57.8264 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:35:09.5361 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:35:28.4473 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:35:32.1703 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:35:47.1735 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:35:48.3620 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:36:06.9379 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:36:08.2963 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:37:16.8574 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:49:44.3253 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:50:05.9657 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:50:38.4226 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:51:08.1891 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:51:10.7648 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:51:22.7195 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:51:30.0608 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:52:35.1827 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:52:38.4066 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:52:40.4730 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:53:23.7033 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:53:26.2495 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:55:11.4745 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:55:13.8058 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 16:56:45.9323 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:01:35.5648 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:08:13.3834 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:11:11.0828 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:11:13.4738 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:11:16.9648 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:15:00.2441 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:15:03.5331 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:16:09.2056 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:20:18.2143 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:20:33.9364 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:20:35.2379 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:20:47.5125 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:20:48.6587 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:24:40.4206 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:35:23.6023 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:35:49.3410 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:35:59.1304 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:37:17.2108 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:37:20.2647 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:37:30.0836 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:44:21.7131 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:44:25.3804 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:44:27.0061 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:44:36.0894 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:49:00.5673 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:49:09.5705 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:51:54.7250 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 17:52:03.3378 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 18:22:30.9941 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 18:23:09.8301 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 18:23:19.4835 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 18:24:46.7287 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.
+2019-08-13 18:24:55.4795 CardHolderOracle.DAL.common Error generated :  CardList Column 'BASIC_CARD_FLAG' does not belong to table Table.

@@ -1,0 +1,97 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+.gradient-bg {
+    @include brand-gradient-reverse;
+    min-height:100vh;
+}
+.pre-login-box {
+    padding: 4rem 3rem;
+
+    @media screen and (max-width: $break-large) {
+        padding: 4rem 0;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    h6 {
+        font-size: 0.95rem;
+    }
+}
+.signup-btn {
+    &:hover {
+        @include card-hover-shadow;
+    }
+
+    > a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $brand-dark-blue;
+        }
+    }
+}
+ 
+.relative{
+    position:relative;
+}
+.Virtualtable {
+    position: absolute;
+    left: 107%;
+    top: 15%;
+    z-index:1000;
+
+    &:before {
+        content:"";
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+        border-right: 13px solid $white-color;
+        position:absolute;
+        top:45%;
+        left:-13px;
+    }
+}
+.keyboardtbl {
+    border-collapse: separate;
+    border-spacing: 5px;
+
+    tr {
+        td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #adb5bd;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+            -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+.stepper-view {
+    text-align: center;
+    margin:1rem 0;
+
+    ul {
+        margin:0 auto;
+        padding:0;
+        display: flex;
+        width: 100px;
+
+        li {
+            list-style:none;
+            flex: 1;
+            height:3px;
+            background-color: #a0acca;
+            margin:0 3px;
+
+            &.active {
+                background-color: #12307a;
+            }
+        }
+    }
+}

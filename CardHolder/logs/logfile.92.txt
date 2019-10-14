@@ -1,0 +1,14 @@
+2019-09-09 10:38:02.4155 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-09 10:38:02.5464 CardHolderOracle.DAL.common ORA-00942: table or view does not exist
+2019-09-09 12:59:54.4174 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <avani.salekar@mastek.com>: Relay access denied
+2019-09-09 12:59:54.4576 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-09 12:59:54.4576 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>
+2019-09-09 13:04:21.7178 CardHolderOracle.DAL.common Mail SendMail Fail ERROR:Client does not have permission to submit mail to this server. The server response was: 4.7.1 <avani.salekar@mastek.com>: Relay access denied
+2019-09-09 13:04:21.7238 CardHolderOracle.DAL.common Error SendMail StackTrace:   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SendMailfunction.SendMail(String FromEmailID, List`1 ToEmailID, List`1 CCEmailID, String BCCEmailID, String NotificationMailID, String Subject, String Body, Boolean IsBodyHtml, Int64 userId, List`1 _Attachments) in D:\Nitesh\Cardholder(new design editing)\Cardholder\CardHolder.Utility\SendMailfunction.cs:line 141<br/><br/>
+2019-09-09 13:04:21.7238 CardHolderOracle.DAL.common Error SendMail InnerException :<br/>

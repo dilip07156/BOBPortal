@@ -1,0 +1,356 @@
+﻿@import "../abstracts/variables";
+
+.secondary-menus {
+    li {
+        a {
+            color: $black-color;
+
+            &:hover {
+                color: rgba(0,0,0,0.5);
+            }
+        }
+    }
+
+    @media screen and (max-width: $break-large) {
+        display: none;
+    }
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    @media screen and (max-width: $break-large) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.navbar-dark {
+    @media screen and (max-width: $break-large) {
+        .navbar-nav {
+            .nav-link {
+                text-transform: uppercase;
+                font-size: 14px;
+
+                &:focus, &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .show {
+                > .nav-link {
+                    color: $primary-color;
+                }
+            }
+
+            .dropdown-menu {
+                background-color: #f7f7f7;
+                padding-left: 10px;
+
+                .dropdown-item {
+                    padding: 0.8rem;
+                    font-size: 13px;
+
+                    &:active, &:hover {
+                        background-color: darken(#f7f7f7, 5%);
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    > li.nav-item {
+        flex: 1;
+
+        @media screen and (max-width: $break-large) {
+            &.dropdown {
+                &.show {
+                    .dropdown-toggle {
+                        &::after {
+                            transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                        }
+                    }
+                }
+
+                .dropdown-toggle {
+                    &::after {
+                        border: solid $brand-color;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        padding: 4px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        position: absolute;
+                        right: 15px;
+                        transition: all 0.4s ease;
+                        top: 16px;
+                    }
+                }
+            }
+        }
+
+        > a.nav-link {
+            padding: 0.8rem;
+            color: rgba(255,255,255,0.9);
+
+            @media screen and (max-width: $break-large) {
+                color: rgba(0,0,0,0.9);
+            }
+        }
+
+        &.active {
+            > a.nav-link {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    width: 0px;
+                    height: 0px;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid $white-color;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -8px;
+                }
+            }
+        }
+
+        @media screen and (max-width: $break-large) {
+            &.active {
+                > a.nav-link {
+                    border-bottom: 0;
+                    border-left: 4px solid $brand-color;
+                    color: $primary-color;
+
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        > a.nav-link {
+            text-align: center;
+
+            @media screen and (max-width: $break-large) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    @media screen and (max-width: $break-large) {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+#sidebar {
+    width: 100%;
+    position: relative;
+    background-color: #3E5996;
+    background: linear-gradient(48.38deg, #3CBFE9 0%, #3E5996 100%);
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $break-large) {
+        width: 250px;
+        position: fixed;
+        top: 62px;
+        left: -255px;
+        height: 100vh;
+        z-index: 999;
+        background: $white-color;
+        color: $primary-color;
+        transition: all 0.3s;
+        overflow-y: scroll;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+        &.active {
+            left: 0;
+        }
+    }
+}
+
+#chat-btn {
+    display: inline-block;
+    padding: 0;
+
+    span {
+        font-size: 0.6rem;
+        color: $primary-color;
+    }
+}
+
+
+
+.overlay {
+    @media screen and (max-width: $break-large) {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        top: 62px;
+        left: 0;
+
+        &.active {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+//dropdown slide effect
+.dropdown {
+    @media screen and (max-width: $break-large) {
+        .dropdown-menu {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            max-height: 0;
+            display: block;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        &.show {
+            .dropdown-menu {
+                max-height: 400px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.hamburger {
+    .close-text {
+        display: none;
+    }
+
+    .menu-text, .close-text {
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+
+    &.is-active {
+        .close-text {
+            display: block;
+        }
+
+        .menu-text {
+            display: none;
+        }
+    }
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: $primary-color;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    text-align: center;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #000;
+}
+
+.hamburger-box {
+    width: 27px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 27px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -9px;
+}
+
+.hamburger-inner::after {
+    bottom: -9px;
+}
+
+
+.hamburger--3dx .hamburger-box {
+    perspective: 80px;
+}
+
+.hamburger--3dx .hamburger-inner {
+    transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
+    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hamburger--3dx.is-active .hamburger-inner {
+    background-color: transparent !important;
+    transform: rotateY(180deg);
+}
+
+.hamburger--3dx.is-active .hamburger-inner::before {
+    transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+
+.hamburger--3dx.is-active .hamburger-inner::after {
+    transform: translate3d(0, -9px, 0) rotate(-45deg);
+}

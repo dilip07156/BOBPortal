@@ -1,0 +1,1 @@
+2019-09-13 10:45:27.8426 CardHolderOracle.DAL.common Error generated :  UnbilledTransactionsCount :Connection request timed out

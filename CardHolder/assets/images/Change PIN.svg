@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Change PIN</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#173F85" offset="0%"></stop>
+            <stop stop-color="#3BBAE6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-217.000000, -123.000000)">
+            <g id="Change-PIN" transform="translate(217.000000, 123.000000)">
+                <path d="M6,3 C6,4.65690909 4.65690909,6 3,6 C1.34309091,6 0,4.65690909 0,3 C0,1.34309091 1.34309091,0 3,0 C4.65690909,0 6,1.34309091 6,3" id="Fill-1" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M18,3 C18,4.65690909 16.6569091,6 15,6 C13.3430909,6 12,4.65690909 12,3 C12,1.34309091 13.3430909,0 15,0 C16.6569091,0 18,1.34309091 18,3" id="Fill-3" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M30,3 C30,4.65690909 28.6569091,6 27,6 C25.3430909,6 24,4.65690909 24,3 C24,1.34309091 25.3430909,0 27,0 C28.6569091,0 30,1.34309091 30,3" id="Fill-5" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M6,15 C6,16.6569091 4.65690909,18 3,18 C1.34309091,18 0,16.6569091 0,15 C0,13.3430909 1.34309091,12 3,12 C4.65690909,12 6,13.3430909 6,15" id="Fill-7" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M18,15 C18,16.6569091 16.6569091,18 15,18 C13.3430909,18 12,16.6569091 12,15 C12,13.3430909 13.3430909,12 15,12 C16.6569091,12 18,13.3430909 18,15" id="Fill-9" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M30,15 C30,16.6569091 28.6569091,18 27,18 C25.3430909,18 24,16.6569091 24,15 C24,13.3430909 25.3430909,12 27,12 C28.6569091,12 30,13.3430909 30,15" id="Fill-11" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M6,27 C6,28.6569091 4.65690909,30 3,30 C1.34309091,30 0,28.6569091 0,27 C0,25.3430909 1.34309091,24 3,24 C4.65690909,24 6,25.3430909 6,27" id="Fill-13" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M18,27 C18,28.6569091 16.6569091,30 15,30 C13.3430909,30 12,28.6569091 12,27 C12,25.3430909 13.3430909,24 15,24 C16.6569091,24 18,25.3430909 18,27" id="Fill-15" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <path d="M30,27 C30,28.6569091 28.6569091,30 27,30 C25.3430909,30 24,28.6569091 24,27 C24,25.3430909 25.3430909,24 27,24 C28.6569091,24 30,25.3430909 30,27" id="Fill-17" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                <polyline id="Stroke-19" stroke="#DF5435" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="3 3 15 3 15 15.3130478 27 15.3130478 27 27"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
